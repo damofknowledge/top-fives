@@ -4,8 +4,7 @@
       <img
         v-if="props.image"
         :src="props.image"
-        alt=""
-        loading="lazy"
+        :alt="game.artist?.name"
         width="160"
         height="160"
         class="mx-auto rounded-lg"
