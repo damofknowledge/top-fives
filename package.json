@@ -1,0 +1,50 @@
+{
+  "name": "topfives.fyi",
+  "description": "The Spotify Popularity Guessing Game",
+  "authors": "@damofknowledge",
+  "version": "2.2.1",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --https --ssl-key local-key.pem --ssl-cert local-cert.pem --port 3000",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@pinia/nuxt": "^0.4.11",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@vueuse/components": "^10.5.0",
+    "@vueuse/core": "^10.5.0",
+    "@vueuse/integrations": "^10.5.0",
+    "@vueuse/nuxt": "^10.5.0",
+    "@vueuse/router": "^10.5.0",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.5.1",
+    "date-fns": "^2.30.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vuejs-accessibility": "^2.2.0",
+    "focus-trap": "^7.5.3",
+    "nuxt": "^3.7.4",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "prettier-eslint": "^15.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.5",
+    "string-similarity-js": "^2.1.4",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "vue-gtag-next": "^1.14.0"
+  },
+  "packageManager": "yarn@3.6.3"
+}
