@@ -19,7 +19,7 @@
       <button
         type="button"
         @click="openModal('help')"
-        class="h-8 w-8 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
+        class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
         <font-awesome-icon :icon="icons.help" class="h-5 w-5" />
         <span class="sr-only">How to Play</span>
@@ -28,7 +28,7 @@
       <button
         type="button"
         @click="openModal('stats')"
-        class="h-8 w-8 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
+        class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
         <font-awesome-icon :icon="icons.stats" />
         <span class="sr-only">Stats</span>
@@ -37,19 +37,10 @@
       <button
         type="button"
         @click="openModal('archive')"
-        class="h-8 w-8 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
+        class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
         <font-awesome-icon :icon="icons.archive" />
         <span class="sr-only">Archive</span>
-      </button>
-
-      <button
-        type="button"
-        @click="openModal('info')"
-        class="h-8 w-8 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
-      >
-        <font-awesome-icon :icon="icons.info" class="h-5 w-5" />
-        <span class="sr-only">Info</span>
       </button>
     </header>
     <div class="bg-cyan-900">
@@ -72,10 +63,6 @@
       <template v-slot:title>Archive</template>
       <template v-slot:content><ModalArchive /></template>
     </ModalPopup>
-    <ModalPopup v-if="state.modalName === 'info' && state.modalIsOpen" @close-modal="closeModal()">
-      <template v-slot:title>Information</template>
-      <template v-slot:content><ModalInfo /></template>
-    </ModalPopup>
   </div>
 </template>
 
@@ -84,7 +71,6 @@ import {
   faCircleQuestion,
   faChartBar,
   faCalendarDays,
-  faCircleInfo,
 } from '@fortawesome/free-solid-svg-icons';
 
 const route = useRoute();
@@ -98,7 +84,6 @@ const icons = {
   help: faCircleQuestion,
   stats: faChartBar,
   archive: faCalendarDays,
-  info: faCircleInfo,
 };
 
 const openModal = (name: string = '') => {

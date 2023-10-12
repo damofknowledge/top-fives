@@ -1,26 +1,6 @@
 <template>
   <div class="leading-6">
-    <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">About</h3>
-
-    <p class="mb-4">
-      Top Fives was born in a wood-paneled, Taylor, Michigan basement on October 16th, 2022.
-      <a
-        href="https://ko-fi.com/P5P8GC2A3"
-        target="_blank"
-        class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
-        >If you’ve enjoyed playing please consider supporting this work and my cold brew habit on
-        <strong>ko-fi</strong>.</a
-      >
-    </p>
-
-    <p class="mb-4">
-      Contact or feedback:
-      <a
-        href="mailto:topfivesfyi@gmail.com"
-        class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
-        >TopFivesFYI@gmail.com</a
-      >
-    </p>
+    
 
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">Release Notes</h3>
 
@@ -38,15 +18,7 @@
       <li class="mb-2">v1.4.0: Info and release notes added</li>
     </ul>
 
-    <p>
-      A funemployment project by
-      <a
-        href="https://github.com/damofknowledge"
-        class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
-      >
-        @DamOfKnowledge </a
-      >.
-    </p>
+    
   </div>
 </template>
 
