@@ -759,7 +759,7 @@ export const artists: Array<Artist> = [
   {
     id: 151,
     artistId: '762310PdDnwsDxAQxzQkfX',
-    name: 'Depeche Mode'
+    name: 'Depeche Mode',
   },
   {
     id: 152,
@@ -914,7 +914,7 @@ export const artists: Array<Artist> = [
   {
     id: 182,
     artistId: '4kI8Ie27vjvonwaB2ePh8T',
-    name: 'Portugal. The Man'
+    name: 'Portugal. The Man',
   },
   {
     id: 183,
@@ -1334,7 +1334,7 @@ export const artists: Array<Artist> = [
   {
     id: 266,
     artistId: '70cRZdQywnSFp9pnc2WTCE',
-    name: 'Simon & Garfunkel'
+    name: 'Simon & Garfunkel',
   },
   {
     id: 267,

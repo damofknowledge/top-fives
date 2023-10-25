@@ -15,7 +15,7 @@ module.exports = {
     'plugin:vue/essential',
     'plugin:vuejs-accessibility/recommended',
   ],
-  plugins: ['prettier', '@typescript-eslint'],
+  plugins: ['prettier', '@typescript-eslint', 'vitest'],
   rules: {
     'no-unused-vars': 'off',
     'no-console': isProduction ? ['error', { allow: ['error', 'warn'] }] : 'off',

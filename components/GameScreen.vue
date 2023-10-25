@@ -261,7 +261,7 @@ const hint = computed(() => {
     hintTypes.push('remixed');
   }
   if (hintTypes.length) {
-    hint = `Today’s Hint: Correct answers can include ${hintTypes.join(', ')} versions.`
+    hint = `Today’s Hint: Correct answers can include ${hintTypes.join(', ')} versions.`;
   }
   return hint;
 });

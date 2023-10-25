@@ -67,11 +67,7 @@
 </template>
 
 <script setup lang="ts">
-import {
-  faCircleQuestion,
-  faChartBar,
-  faCalendarDays,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCircleQuestion, faChartBar, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 const route = useRoute();
 

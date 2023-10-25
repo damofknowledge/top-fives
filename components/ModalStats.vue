@@ -45,7 +45,7 @@
           v-if="correct"
           class="bar absolute top-0 left-1 z-0 h-full rounded"
           :class="{ 'bg-green-600': correct }"
-          :style="`width: ${((correct / state.stats.playCount) * 100) + 15}%`"
+          :style="`width: ${(correct / state.stats.playCount) * 100 + 15}%`"
         >
           <span class="absolute right-2 top-0 text-xs">{{ correct }}</span>
         </span>

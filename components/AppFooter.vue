@@ -6,7 +6,7 @@
         target="_blank"
         class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
       >
-        Want to pick the artist of the day? Include your pick with a donation on Ko-fi! 
+        Want to pick the artist of the day? Include your pick with a donation on Ko-fi!
       </a>
     </p>
   </footer>
