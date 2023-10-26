@@ -1,7 +1,5 @@
 # TopFives.fyi
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c0dfba0c-1f2e-4ef4-b931-e612d9b1a9fa/deploy-status)](https://app.netlify.com/sites/damofknowledge-top-fives/deploys)
-
 A funemployment project by [@DamOfKnowledge](https://github.com/damofknowledge)
       
 ## Technology
@@ -17,12 +15,22 @@ Make sure to install the dependencies:
 yarn install
 ```
 
+Replace the Spotify client ID and secret in `nuxt.config.js` with your own values.
+
 ## Development Server
 
 Start the development server on https://localhost:3000
 
 ```bash
 yarn dev
+```
+
+## Testing
+
+Unit tests are located in `/tests`
+
+```bash
+yarn test
 ```
 
 ## Production

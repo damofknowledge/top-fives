@@ -100,18 +100,10 @@
 </template>
 
 <script setup lang="ts">
-import { useGameStore } from '@/stores/game';
 import { faUnlock } from '@fortawesome/free-solid-svg-icons';
 
 const icons = {
   unlock: faUnlock,
-};
-
-const game = useGameStore();
-
-const setMode = (value: boolean) => {
-  game.setMode(value);
-  localStorage.setItem('hardMode', `${value ? '1' : '0'}`);
 };
 </script>
 

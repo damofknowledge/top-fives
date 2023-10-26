@@ -1703,18 +1703,18 @@ export const artists: Array<Artist> = [
   },
   {
     id: 340,
-    artistId: '2YOYua8FpudSEiB9s88IgQ',
-    name: 'Yung Gravy',
+    artistId: '5M52tdBnJaKSvOpJGz8mfZ',
+    name: 'Black Sabbath',
   },
   {
     id: 341,
-    artistId: '12VaqyEhgwDRuFfEqbnrpz',
-    name: 'PJ Harvey',
+    artistId: '3u1ulLq00Y3bfmq9FfjsPu',
+    name: 'Ween',
   },
   {
     id: 342,
-    artistId: '3u1ulLq00Y3bfmq9FfjsPu',
-    name: 'Ween',
+    artistId: '55tif8708yyDQlSjh3Trdu',
+    name: 'Ben Folds',
   },
   {
     id: 343,
@@ -1723,23 +1723,23 @@ export const artists: Array<Artist> = [
   },
   {
     id: 344,
+    artistId: '44gRHbEm4Uqa0ykW0rDTNk',
+    name: 'Ben Folds Five',
+  },
+  {
+    id: 345,
     artistId: '4S2yOnmsWW97dT87yVoaSZ',
     name: 'NOFX',
   },
   {
-    id: 345,
-    artistId: '05fG473iIaoy82BF1aGhL8',
-    name: 'Slipknot',
-  },
-  {
     id: 346,
-    artistId: '55tif8708yyDQlSjh3Trdu',
-    name: 'Ben Folds',
+    artistId: '2YOYua8FpudSEiB9s88IgQ',
+    name: 'Yung Gravy',
   },
   {
     id: 347,
-    artistId: '44gRHbEm4Uqa0ykW0rDTNk',
-    name: 'Ben Folds Five',
+    artistId: '12VaqyEhgwDRuFfEqbnrpz',
+    name: 'PJ Harvey',
   },
   {
     id: 348,
@@ -1838,13 +1838,13 @@ export const artists: Array<Artist> = [
   },
   {
     id: 367,
-    artistId: '3MM8mtgFzaEJsqbjZBSsHJ',
-    name: 'Bloc Party',
+    artistId: '2wvUfjKGoXvcnDHq7GgMOa',
+    name: 'The Ting Tings',
   },
   {
     id: 368,
-    artistId: '2iM28IgKg89v1o7BTQAVPo',
-    name: 'Bruce Hornsby',
+    artistId: '3MM8mtgFzaEJsqbjZBSsHJ',
+    name: 'Bloc Party',
   },
   {
     id: 369,
@@ -1853,8 +1853,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 370,
-    artistId: '2wvUfjKGoXvcnDHq7GgMOa',
-    name: 'The Ting Tings',
+    artistId: '2iM28IgKg89v1o7BTQAVPo',
+    name: 'Bruce Hornsby',
   },
   {
     id: 371,
@@ -1928,8 +1928,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 385,
-    artistId: '5aYyPjAsLj7UzANzdupwnS',
-    name: 'Good Charlotte',
+    artistId: '0Y0U54wBpoCl8KvkYc9Ej6',
+    name: 'cumgirl8',
   },
   {
     id: 386,
@@ -1963,48 +1963,58 @@ export const artists: Array<Artist> = [
   },
   {
     id: 392,
-    artistId: '',
-    name: '',
+    artistId: '1co4F2pPNH8JjTutZkmgSm',
+    name: 'Ramones',
   },
   {
     id: 393,
-    artistId: '',
-    name: '',
+    artistId: '1XkoF8ryArs86LZvFOkbyr',
+    name: 'Mary J. Blige',
   },
   {
     id: 394,
-    artistId: '',
-    name: '',
+    artistId: '05fG473iIaoy82BF1aGhL8',
+    name: 'Slipknot',
   },
   {
     id: 395,
-    artistId: '',
-    name: '',
+    artistId: '6ZLTlhejhndI4Rh53vYhrY',
+    name: 'Ozzy Osbourne',
   },
   {
     id: 396,
-    artistId: '',
-    name: '',
+    artistId: '4TMHGUX5WI7OOm53PqSDAT',
+    name: 'Grateful Dead',
   },
   {
     id: 397,
-    artistId: '',
-    name: '',
+    artistId: '0LcJLqbBmaGUft1e9Mm8HV',
+    name: 'ABBA',
   },
   {
     id: 398,
-    artistId: '',
-    name: '',
+    artistId: '5nCi3BB41mBaMH9gfr6Su0',
+    name: 'fun.',
   },
   {
     id: 399,
-    artistId: '',
-    name: '',
+    artistId: '4OOlG5eBXSkSAAEeKjJb5Y',
+    name: 'Courtney Barnett',
   },
   {
     id: 400,
-    artistId: '',
-    name: '',
+    artistId: '5aYyPjAsLj7UzANzdupwnS',
+    name: 'Good Charlotte',
+  },
+  {
+    id: 401,
+    artistId: '6Jrxnp0JgqmeUX1veU591p',
+    name: 'Santigold',
+  },
+  {
+    id: 402,
+    artistId: '63MQldklfxkjYDoUE4Tppz',
+    name: 'M83',
   },
   {
     id: 9999,

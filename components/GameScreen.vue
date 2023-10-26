@@ -120,7 +120,6 @@ import { faCirclePlay, faLock, faUnlock } from '@fortawesome/free-solid-svg-icon
 import { OnClickOutside } from '@vueuse/components';
 import { stringSimilarity } from 'string-similarity-js';
 
-const runtimeConfig = useRuntimeConfig();
 const router = useRouter();
 const route = useRoute();
 
