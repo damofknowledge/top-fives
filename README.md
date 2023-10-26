@@ -33,6 +33,10 @@ Unit tests are located in `/tests`
 yarn test
 ```
 
+## Pre-commit Hooks
+
+Husky is installed as a dependency to lint the project before every commit.
+
 ## Production
 
 Build the application for production:
@@ -44,7 +48,7 @@ yarn build
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
