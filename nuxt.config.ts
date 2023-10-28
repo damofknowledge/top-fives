@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   ssr: false,
-  modules: ['@vueuse/nuxt', '@pinia/nuxt'],
+  modules: ['@vueuse/nuxt', '@pinia/nuxt', 'nuxt-vitest'],
   runtimeConfig: {
     public: {
       spotifyClientId: '69dff9d276db4fd4847f2bb5faac6eed',
