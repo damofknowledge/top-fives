@@ -1828,8 +1828,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 365,
-    artistId: '5Fhey8VIfTavg9F99QlipO',
-    name: 'The Refreshments',
+    artistId: '3MM8mtgFzaEJsqbjZBSsHJ',
+    name: 'Bloc Party',
   },
   {
     id: 366,
@@ -1843,8 +1843,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 368,
-    artistId: '3MM8mtgFzaEJsqbjZBSsHJ',
-    name: 'Bloc Party',
+    artistId: '5Fhey8VIfTavg9F99QlipO',
+    name: 'The Refreshments',
   },
   {
     id: 369,
