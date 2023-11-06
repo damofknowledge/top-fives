@@ -67,6 +67,7 @@ module.exports = {
         allowChildren: true,
       },
     ],
+    'vuejs-accessibility/media-has-caption': 'off', // Spotify preview urls do not supply captions
     'vuejs-accessibility/click-events-have-key-events': 'off', // Silence for now since there are too many violations
   },
   overrides: [

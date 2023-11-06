@@ -15,7 +15,7 @@
         :key="i"
         class="answer mb-2 flex flex-wrap py-1 last:mb-0"
         :class="{
-          fuck: game.answers[i].score === 0,
+          fail: game.answers[i].score === 0,
           flop: game.answers[i].score === 0.5,
           flip: game.answers[i].score === 1,
         }"
@@ -55,16 +55,25 @@
             </div>
           </OnClickOutside>
           <button
-            v-if="!game.hardMode"
+            v-if="game.status === 'complete'"
             type="button"
-            @click="check(i)"
-            ref="answerSubmits"
+            @click="preview(i)"
+            ref="answerAudioControls"
             class="h-9 w-9 rounded bg-cyan-600 text-lg text-white enabled:hover:bg-cyan-900 disabled:bg-transparent disabled:opacity-50"
-            :disabled="game.answers[i].score !== undefined || false"
+            :disabled="!state.topTracks[i].preview_url"
           >
-            <font-awesome-icon v-if="game.answers[i].score === undefined" :icon="icons.unlock" />
-            <font-awesome-icon v-else :icon="icons.lock" />
-            <span class="sr-only">Submit</span>
+            <font-awesome-icon v-if="!state.topTracks[i].preview_url" :icon="icons.missing" />
+            <template v-else>
+              <font-awesome-icon class="play" :icon="icons.play" />
+              <font-awesome-icon class="stop" :icon="icons.stop" />
+            </template>
+            <span class="sr-only">
+              <audio ref="answerAudios" :src="state.topTracks[i].preview_url">
+                <a :href="state.topTracks[i].preview_url">
+                  Preview {{ state.topTracks[i].name }}
+                </a>
+              </audio>
+            </span>
           </button>
         </div>
         <p v-if="game.answers[i].error" class="pt-1 leading-4 text-rose-500">
@@ -75,20 +84,12 @@
             {{ state.topTracks[i].name }} —
             <span class="italic">{{ state.topTracks[i].album }}</span>
           </span>
-          <!-- <audio
-              v-if="game.status === 'complete'"
-              controls
-              :src="state.topTracks[i].preview_url">
-                  <a :href="state.topTracks[i].preview_url">
-                      Download audio
-                  </a>
-          </audio> -->
           <small v-else>&nbsp;</small>
         </p>
       </li>
     </ol>
 
-    <div v-if="game.hardMode">
+    <div>
       <button
         type="button"
         @click="checkAll()"
@@ -116,7 +117,7 @@ import { differenceInDays } from 'date-fns';
 import endpoints from '@/data/endpoints';
 import { artists } from '@/data/game';
 import { Artist, Answer, Track, Distributions } from '@/data/types';
-import { faCirclePlay, faLock, faUnlock } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faLock, faUnlock, faNotdef, faStop } from '@fortawesome/free-solid-svg-icons';
 import { OnClickOutside } from '@vueuse/components';
 import { stringSimilarity } from 'string-similarity-js';
 
@@ -124,14 +125,18 @@ const router = useRouter();
 const route = useRoute();
 
 const icons = {
-  play: faCirclePlay,
+  play: faMusic,
   lock: faLock,
   unlock: faUnlock,
+  missing: faNotdef,
+  stop: faStop,
 };
 
 const answerWrappers = ref([]);
 const answerInputs = ref([]);
 const answerSubmits = ref([]);
+const answerAudioControls = ref([]);
+const answerAudios = ref([]);
 
 const launchDate = new Date('2022-11-22T00:00:00');
 const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
@@ -285,6 +290,7 @@ const getArtistTracks = async (albumIds: string) => {
           return {
             name: i.name,
             popularity: album?.popularity || 0,
+            preview_url: i.preview_url,
           };
         });
         return tracks;
@@ -557,6 +563,34 @@ const check = (idx: number) => {
   saveGame();
 };
 
+const preview = (idx: number) => {
+  let control = answerAudioControls.value[idx] as HTMLButtonElement;
+  let audio = answerAudios.value[idx] as HTMLAudioElement;
+
+  // toggle current control
+  if (control.hasAttribute('data-playing')) {
+    audio.pause();
+    audio.currentTime = 0;
+    control.removeAttribute('data-playing');
+    return;
+  }
+
+  // stop and reset all controls
+  answerAudioControls.value.forEach((_, index) => {
+    let audio = answerAudios.value[index] as HTMLAudioElement;
+    audio.pause();
+    audio.currentTime = 0;
+    let control = answerAudioControls.value[index] as HTMLButtonElement;
+    control.removeAttribute('data-playing');
+  });
+
+  // activate clicked preview
+  const currentAudio = answerAudios.value[idx] as HTMLAudioElement;
+  currentAudio.play();
+  const currentControl = answerAudioControls.value[idx] as HTMLButtonElement;
+  currentControl.setAttribute('data-playing', '');
+};
+
 const checkAll = () => {
   // Check all answers sequentially, break on errors
   // TODO: validate uniqueness of all inputs first?
@@ -642,30 +676,46 @@ onMounted(async () => {
 
 <style>
 ol {
-  counter-reset: my-awesome-counter;
+  counter-reset: list-counter;
 }
 .answer {
-  counter-increment: my-awesome-counter;
+  counter-increment: list-counter;
   position: relative;
 }
 .answer .input-container::before {
-  content: '🔳 ' counter(my-awesome-counter) '.';
+  content: '🔳 ' counter(list-counter) '.';
   font-weight: 900;
 }
 
 .answer.flip .input-container::before {
-  content: '🟩 ' counter(my-awesome-counter) '.';
+  content: '🟩 ' counter(list-counter) '.';
 }
 
 .answer.flop .input-container::before {
-  content: '🟨 ' counter(my-awesome-counter) '.';
+  content: '🟨 ' counter(list-counter) '.';
 }
 
-.answer.fuck .input-container::before {
-  content: '⬜️ ' counter(my-awesome-counter) '.';
+.answer.fail .input-container::before {
+  content: '⬜️ ' counter(list-counter) '.';
 }
 
 .search-results-wrapper {
   max-height: 300px;
+}
+
+button .play {
+  display: var(--fa-display, inline-block);
+}
+
+button .stop {
+  display: none;
+}
+
+button[data-playing] .play {
+  display: none;
+}
+
+button[data-playing] .stop {
+  display: var(--fa-display, inline-block);
 }
 </style>
