@@ -10,8 +10,8 @@ describe('AppHeader', () => {
       global: {
         stubs: {
           FontAwesomeIcon: true,
-        }
-      }
+        },
+      },
     });
     console.log(wrapper.html());
     expect(wrapper.html()).toBeTruthy();

@@ -1913,28 +1913,28 @@ export const artists: Array<Artist> = [
   },
   {
     id: 382,
-    artistId: '2YFBqMMiIIL4XyiEwqySUQ',
-    name: 'Protomartyr',
+    artistId: '3Nrfpe0tUJi4K4DXYWgMUX',
+    name: 'BTS',
   },
   {
     id: 383,
-    artistId: '4kwxTgCKMipBKhSnEstNKj',
-    name: 'Animal Collective',
+    artistId: '2K13AVg3bFpHSxDM1vJ0qA',
+    name: 'CSS',
   },
   {
     id: 384,
-    artistId: '3WggbHDpj4rPKbL97zG5MQ',
-    name: 'Tortoise',
+    artistId: '19I4tYiChJoxEO5EuviXpz',
+    name: 'AFI',
   },
   {
     id: 385,
-    artistId: '0Y0U54wBpoCl8KvkYc9Ej6',
-    name: 'cumgirl8',
+    artistId: '2NmK5FyrQ18HOPXq1UBzqa',
+    name: 'SWV',
   },
   {
     id: 386,
-    artistId: '4A1yfFuBmBOgzv4Oe3fFHk',
-    name: 'The Faint',
+    artistId: '5INjqkS1o8h1imAzPqGZBb',
+    name: 'Tame Impala',
   },
   {
     id: 387,
@@ -1953,8 +1953,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 390,
-    artistId: '5INjqkS1o8h1imAzPqGZBb',
-    name: 'Tame Impala',
+    artistId: '0Y0U54wBpoCl8KvkYc9Ej6',
+    name: 'cumgirl8',
   },
   {
     id: 391,
@@ -2015,6 +2015,61 @@ export const artists: Array<Artist> = [
     id: 402,
     artistId: '63MQldklfxkjYDoUE4Tppz',
     name: 'M83',
+  },
+  {
+    id: 403,
+    artistId: '3z6Gk257P9jNcZbBXJNX5i',
+    name: 'Regina Spector',
+  },
+  {
+    id: 404,
+    artistId: '4AK6F7OLvEQ5QYCBNiQWHq',
+    name: 'One Direction',
+  },
+  {
+    id: 405,
+    artistId: '2YFBqMMiIIL4XyiEwqySUQ',
+    name: 'Protomartyr',
+  },
+  {
+    id: 406,
+    artistId: '4kwxTgCKMipBKhSnEstNKj',
+    name: 'Animal Collective',
+  },
+  {
+    id: 407,
+    artistId: '3WggbHDpj4rPKbL97zG5MQ',
+    name: 'Tortoise',
+  },
+  {
+    id: 408,
+    artistId: '4A1yfFuBmBOgzv4Oe3fFHk',
+    name: 'The Faint',
+  },
+  {
+    id: 409,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 410,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 411,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 412,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 413,
+    artistId: '',
+    name: '',
   },
   {
     id: 9999,
