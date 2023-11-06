@@ -62,7 +62,9 @@
             class="h-9 w-9 rounded bg-cyan-600 text-lg text-white enabled:hover:bg-cyan-900 disabled:bg-transparent disabled:opacity-50"
             :disabled="!state.topTracks[i].preview_url"
           >
-            <font-awesome-icon v-if="!state.topTracks[i].preview_url" :icon="icons.missing" />
+            <span class="sr-only" v-if="!state.topTracks[i].preview_url">
+              A preview of this song is not available
+            </span>
             <template v-else>
               <font-awesome-icon class="play" :icon="icons.play" />
               <font-awesome-icon class="stop" :icon="icons.stop" />
