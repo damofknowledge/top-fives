@@ -2048,26 +2048,66 @@ export const artists: Array<Artist> = [
   },
   {
     id: 409,
-    artistId: '',
-    name: '',
+    artistId: '0du5cEVh5yTK9QJze8zA0C',
+    name: 'Bruno Mars',
   },
   {
     id: 410,
-    artistId: '',
-    name: '',
+    artistId: '676oR6vRgfSzaBibbPhLhH',
+    name: 'Menomena', // Hard
   },
   {
     id: 411,
-    artistId: '',
-    name: '',
+    artistId: '2jgPkn6LuUazBoBk6vvjh5',
+    name: 'The Zombies',
   },
   {
     id: 412,
+    artistId: '1nJvji2KIlWSseXRSlNYsC',
+    name: 'The Velvet Underground',
+  },
+  {
+    id: 413,
+    artistId: '0IwlY33zbBXN7zlS9DP2Cj',
+    name: 'Nico',
+  },
+  {
+    id: 414,
+    artistId: '1P6U1dCeHxPui5pIrGmndZ',
+    name: 'Air',
+  },
+  {
+    id: 415,
+    artistId: '70ZTdbPEcEugBNay4MvxfL',
+    name: 'Bread',
+  },
+  {
+    id: 416,
+    artistId: '7aA592KWirLsnfb5ulGWvU',
+    name: 'Danny Brown',
+  },
+  {
+    id: 417,
+    artistId: '3JhNCzhSMTxs9WLGJJxWOY',
+    name: 'Macklemore',
+  },
+  {
+    id: 418,
     artistId: '',
     name: '',
   },
   {
-    id: 413,
+    id: 419,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 420,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 421,
     artistId: '',
     name: '',
   },
