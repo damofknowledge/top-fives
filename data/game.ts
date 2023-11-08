@@ -2058,8 +2058,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 411,
-    artistId: '2jgPkn6LuUazBoBk6vvjh5',
-    name: 'The Zombies',
+    artistId: '41Q0HrwWBtuUkJc7C1Rp6K',
+    name: '311',
   },
   {
     id: 412,
@@ -2093,8 +2093,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 418,
-    artistId: '',
-    name: '',
+    artistId: '2jgPkn6LuUazBoBk6vvjh5',
+    name: 'The Zombies',
   },
   {
     id: 419,

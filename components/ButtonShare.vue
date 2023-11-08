@@ -43,7 +43,7 @@ const generateEmojiGrid = () => {
 
 const textToShare = computed(() => {
   return (
-    `Top Fives #${game.artist?.id} ${game.artist.name} ${game.score}/${game.answers.length}}\n\n` +
+    `Top Fives #${game.artist?.id} ${game.artist.name} ${game.score}/${game.answers.length}\n\n` +
     `${generateEmojiGrid()}\n` +
     `https://topfives.fyi`
   );
