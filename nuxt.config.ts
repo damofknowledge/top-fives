@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   ssr: false,
-  modules: ['@vueuse/nuxt', '@pinia/nuxt', 'nuxt-vitest', 'nuxt-gtag', 'nuxt-security'],
+  modules: ['@vueuse/nuxt', '@pinia/nuxt', 'nuxt-vitest', 'nuxt-gtag'],
   gtag: {
     id: 'G-PDV429ZLER',
   },
