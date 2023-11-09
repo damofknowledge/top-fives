@@ -1783,8 +1783,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 356,
-    artistId: '6TKOZZDd5uV5KnyC5G4MUt',
-    name: 'Smokey Robinson & The Miracles',
+    artistId: '1McMsnEElThX1knmY4oliG',
+    name: 'Olivia Rodrigo',
   },
   {
     id: 357,
@@ -1813,8 +1813,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 362,
-    artistId: '7gjAu1qr5C2grXeQFFOGeh',
-    name: 'Passion Pit',
+    artistId: '6TKOZZDd5uV5KnyC5G4MUt',
+    name: 'Smokey Robinson & The Miracles',
   },
   {
     id: 363,
@@ -2098,16 +2098,56 @@ export const artists: Array<Artist> = [
   },
   {
     id: 419,
-    artistId: '',
-    name: '',
+    artistId: '56ZTgzPBDge0OvCGgMO3OY',
+    name: 'Beach House',
   },
   {
     id: 420,
+    artistId: '6qqNVTkY8uBg9cP3Jd7DAH',
+    name: 'Billie Eilish',
+  },
+  {
+    id: 421,
+    artistId: '1hLiboQ98IQWhpKeP9vRFw',
+    name: 'boygenius',
+  },
+  {
+    id: 422,
+    artistId: '38zTZcuN7nFvVJ6auhc6V3',
+    name: 'Deerhunter',
+  },
+  {
+    id: 423,
+    artistId: '3wyfo3svXNWnszGAEVey11',
+    name: 'Tokyo Police Club',
+  },
+  {
+    id: 424,
+    artistId: '7gjAu1qr5C2grXeQFFOGeh',
+    name: 'Passion Pit',
+  },
+  {
+    id: 425,
+    artistId: '4NpFxQe2UvRCAjto3JqlSl',
+    name: 'Greta Van Fleet',
+  },
+  {
+    id: 426,
     artistId: '',
     name: '',
   },
   {
-    id: 421,
+    id: 427,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 428,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 429,
     artistId: '',
     name: '',
   },
