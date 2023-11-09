@@ -46,6 +46,7 @@
     "jsdom": "^22.1.0",
     "nuxt": "^3.8.1",
     "nuxt-gtag": "^1.1.1",
+    "nuxt-security": "^1.0.0-rc.3",
     "nuxt-vitest": "^0.11.3",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
