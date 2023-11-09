@@ -1450,7 +1450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.8.1":
+"@nuxt/kit@npm:3.8.1, @nuxt/kit@npm:^3.7.1":
   version: 3.8.1
   resolution: "@nuxt/kit@npm:3.8.1"
   dependencies:
@@ -7925,6 +7925,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-gtag@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "nuxt-gtag@npm:1.1.1"
+  dependencies:
+    "@nuxt/kit": ^3.7.1
+    defu: ^6.1.2
+    pathe: ^1.1.1
+  checksum: a8173216da0de95b3e708aa7795c39cc1dcbd34c71105e6ed27ca5645f8d3ffc007b049620b84e08e92a688e48acfde2bf56e0d326c8c0e06124092c664a0834
+  languageName: node
+  linkType: hard
+
 "nuxt-vitest@npm:^0.11.3":
   version: 0.11.3
   resolution: "nuxt-vitest@npm:0.11.3"
@@ -10218,6 +10229,7 @@ __metadata:
     husky: ^8.0.3
     jsdom: ^22.1.0
     nuxt: ^3.8.1
+    nuxt-gtag: ^1.1.1
     nuxt-vitest: ^0.11.3
     postcss: ^8.4.31
     prettier: ^3.0.3
@@ -10227,7 +10239,6 @@ __metadata:
     tailwindcss: ^3.3.5
     vitest: 0.33.0
     vitest-environment-nuxt: ^0.11.3
-    vue-gtag-next: ^1.14.0
   languageName: unknown
   linkType: soft
 
@@ -11129,15 +11140,6 @@ __metadata:
   peerDependencies:
     eslint: ">=6.0.0"
   checksum: f55056fcd94b6c9d4e940616294f72fb20ae9561a23bc2d7f32499307db7af128dc84d8c43cb8c1a267e0c5d34fc61a9215656a5ea7413df4f58eec81175c6ad
-  languageName: node
-  linkType: hard
-
-"vue-gtag-next@npm:^1.14.0":
-  version: 1.14.0
-  resolution: "vue-gtag-next@npm:1.14.0"
-  peerDependencies:
-    vue: ^3.0.0-rc.11
-  checksum: ddf7db65c9942c528f1ab2351f0b54e442250bb75b4878ca37285bda89331992a9312ee2681c444cb30057216eb06bc57611ca990b3b43e8205f301f17dc500e
   languageName: node
   linkType: hard
 

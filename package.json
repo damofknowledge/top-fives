@@ -45,6 +45,7 @@
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "nuxt": "^3.8.1",
+    "nuxt-gtag": "^1.1.1",
     "nuxt-vitest": "^0.11.3",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
@@ -56,8 +57,7 @@
     "vitest-environment-nuxt": "^0.11.3"
   },
   "dependencies": {
-    "buffer": "^6.0.3",
-    "vue-gtag-next": "^1.14.0"
+    "buffer": "^6.0.3"
   },
   "packageManager": "yarn@3.6.3"
 }
