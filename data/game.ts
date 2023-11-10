@@ -1768,13 +1768,13 @@ export const artists: Array<Artist> = [
   },
   {
     id: 353,
-    artistId: '6Ghvu1VvMGScGpOUJBAHNH',
-    name: 'Deftones',
+    artistId: '7g77hiv179GYIwhfCgETGy',
+    name: 'Brie Larson',
   },
   {
     id: 354,
-    artistId: '1TqQi97nqeiuOJrIFv5Sw0',
-    name: 'Semisonic',
+    artistId: '6Ghvu1VvMGScGpOUJBAHNH',
+    name: 'Deftones',
   },
   {
     id: 355,
@@ -2133,8 +2133,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 426,
-    artistId: '',
-    name: '',
+    artistId: '1TqQi97nqeiuOJrIFv5Sw0',
+    name: 'Semisonic',
   },
   {
     id: 427,
