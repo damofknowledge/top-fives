@@ -2138,16 +2138,26 @@ export const artists: Array<Artist> = [
   },
   {
     id: 427,
-    artistId: '',
-    name: '',
+    artistId: '181bsRPaVXVlUKXrxwZfHK',
+    name: 'Megan Thee Stallion',
   },
   {
     id: 428,
+    artistId: '2Z7gV3uEh1ckIaBzTUCE6R',
+    name: 'Conor Oberst', // hard
+  },
+  {
+    id: 429,
+    artistId: '6sFIWsNpZYqfjUpaCgueju',
+    name: 'Carly Rae Jepsen',
+  },
+  {
+    id: 430,
     artistId: '',
     name: '',
   },
   {
-    id: 429,
+    id: 431,
     artistId: '',
     name: '',
   },
