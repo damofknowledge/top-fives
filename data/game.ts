@@ -2153,11 +2153,56 @@ export const artists: Array<Artist> = [
   },
   {
     id: 430,
+    artistId: '5cj0lLjcoR7YOSnhnX0Po5',
+    name: 'Doja Cat',
+  },
+  {
+    id: 431,
     artistId: '',
     name: '',
   },
   {
-    id: 431,
+    id: 432,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 433,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 434,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 435,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 436,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 437,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 438,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 439,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 440,
     artistId: '',
     name: '',
   },
