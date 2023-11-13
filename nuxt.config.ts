@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       contentSecurityPolicy: {
-        'img-src': ["'self'", "https://i.scdn.co/image/"]
+        'img-src': ["'self'", 'https://i.scdn.co/image/'],
       },
       crossOriginEmbedderPolicy: false,
     },
