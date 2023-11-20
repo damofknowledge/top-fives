@@ -1473,18 +1473,18 @@ export const artists: Array<Artist> = [
   },
   {
     id: 294,
-    artistId: '4l1cKWYW591xnwEGxpUg3J',
-    name: 'Miike Snow',
-  },
-  {
-    id: 295,
     artistId: '2pdvghEHZJtgSXZ7cvNLou',
     name: 'Crosby, Stills & Nash',
   },
   {
-    id: 296,
+    id: 295,
     artistId: '2MqhkhX4npxDZ62ObR5ELO',
     name: 'Hoobastank',
+  },
+  {
+    id: 296,
+    artistId: '53XhwfbYqKCa1cC15pYq2q',
+    name: 'Imagine Dragons',
   },
   {
     id: 297,
@@ -2203,8 +2203,8 @@ export const artists: Array<Artist> = [
   },
   {
     id: 440,
-    artistId: '',
-    name: '',
+    artistId: '4l1cKWYW591xnwEGxpUg3J',
+    name: 'Miike Snow',
   },
   {
     id: 9999,
