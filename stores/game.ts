@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { Answer, Artist } from '@/data/types';
+import type { Answer, Artist } from '@/data/types';
 
 export const useGameStore = defineStore('game', {
   state: () => {

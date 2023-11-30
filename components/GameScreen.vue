@@ -118,7 +118,7 @@ import { useGameStore } from '@/stores/game';
 import { differenceInDays } from 'date-fns';
 import endpoints from '@/data/endpoints';
 import { artists } from '@/data/game';
-import { Artist, Answer, Track, Distributions } from '@/data/types';
+import type { Artist, Answer, Track, Distributions } from '@/data/types';
 import { faMusic, faLock, faUnlock, faNotdef, faStop } from '@fortawesome/free-solid-svg-icons';
 import { OnClickOutside } from '@vueuse/components';
 import { stringSimilarity } from 'string-similarity-js';

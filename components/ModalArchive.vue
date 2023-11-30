@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { artists } from '@/data/game';
-import { Artist } from '@/data/types';
+import type { Artist } from '@/data/types';
 
 import { subDays, format, differenceInDays } from 'date-fns';
 

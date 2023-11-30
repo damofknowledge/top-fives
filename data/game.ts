@@ -1,4 +1,4 @@
-import { Artist } from '@/data/types';
+import type { Artist } from '@/data/types';
 
 export const artists: Array<Artist> = [
   {
@@ -2158,38 +2158,38 @@ export const artists: Array<Artist> = [
   },
   {
     id: 431,
-    artistId: '',
-    name: '',
+    artistId: '163tK9Wjr9P9DmM0AVK7lm',
+    name: 'Lorde',
   },
   {
     id: 432,
-    artistId: '',
-    name: '',
+    artistId: '3Oim8XBPbznAa8Jj8QzNc8',
+    name: 'Cults',
   },
   {
     id: 433,
-    artistId: '',
-    name: '',
+    artistId: '34XlPCFfB4vT7P1ekWq9Jc',
+    name: 'Guster', // hard
   },
   {
     id: 434,
-    artistId: '',
-    name: '',
+    artistId: '3UbyYnvNIT5DFXU4WgiGpP',
+    name: 'Whitesnake',
   },
   {
     id: 435,
-    artistId: '',
-    name: '',
+    artistId: '6PAt558ZEZl0DmdXlnjMgD',
+    name: 'Eric Clapton',
   },
   {
     id: 436,
-    artistId: '',
-    name: '',
+    artistId: '6xdRb2GypJ7DqnWAI2mHGn',
+    name: 'MUNA',
   },
   {
     id: 437,
-    artistId: '',
-    name: '',
+    artistId: '1jSaZgaKHmgc7VTgML528r',
+    name: 'Clap Your Hands Say Yeah', // hard
   },
   {
     id: 438,
@@ -2205,6 +2205,11 @@ export const artists: Array<Artist> = [
     id: 440,
     artistId: '4l1cKWYW591xnwEGxpUg3J',
     name: 'Miike Snow',
+  },
+  {
+    id: 9998,
+    artistId: '6P7H3ai06vU1sGvdpBwDmE',
+    name: 'Steely Dan',
   },
   {
     id: 9999,
