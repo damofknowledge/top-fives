@@ -2193,18 +2193,128 @@ export const artists: Array<Artist> = [
   },
   {
     id: 438,
-    artistId: '',
-    name: '',
+    artistId: '6KOqPxwfNAmZPkiCnDE9yT',
+    name: 'Joe Jackson',
   },
   {
     id: 439,
-    artistId: '',
-    name: '',
+    artistId: '3DiDSECUqqY1AuBP8qtaIa',
+    name: 'Alicia Keys',
   },
   {
     id: 440,
     artistId: '4l1cKWYW591xnwEGxpUg3J',
     name: 'Miike Snow',
+  },
+  {
+    id: 441,
+    artistId: '4oV5EVJ0XFWsJKoOvdRPvl',
+    name: 'Guided By Voices',
+  },
+  {
+    id: 442,
+    artistId: '2JSc53B5cQ31m0xTB7JFpG',
+    name: 'Rogue Wave',
+  },
+  {
+    id: 443,
+    artistId: '3K2zB87GZv1krx031en5VA',
+    name: 'La Roux',
+  },
+  {
+    id: 444,
+    artistId: '6kBjAFKyd0he7LiA5GQ3Gz',
+    name: 'Aqua',
+  },
+  {
+    id: 445,
+    artistId: '7vkiEK5D7Gf0z4M1Va0CXD',
+    name: 'The Vines',
+  },
+  {
+    id: 446,
+    artistId: '4EnEZVjo3w1cwcQYePccay',
+    name: 'N.W.A.',
+  },
+  {
+    id: 447,
+    artistId: '1l9d7B8W0IHy3LqWsxP2SH',
+    name: 'Phantogram',
+  },
+  {
+    id: 448,
+    artistId: '5hE6NCoobhyEu6TRSbjOJY',
+    name: 'Fever Ray',
+  },
+  {
+    id: 449,
+    artistId: '7eQZTqEMozBcuSubfu52i4',
+    name: 'The Knife',
+  },
+  {
+    id: 450,
+    artistId: '3dkbV4qihUeMsqN4vBGg93',
+    name: 'Al Green',
+  },
+  {
+    id: 451,
+    artistId: '5gznATMVO85ZcLTkE9ULU7',
+    name: 'Lenny Kravitz',
+  },
+  {
+    id: 452,
+    artistId: '3pTE9iaJTkWns3mxpNQlJV',
+    name: 'Bombay Bicycle Club',
+  },
+  {
+    id: 453,
+    artistId: '5GtMEZEeFFsuHY8ad4kOxv',
+    name: 'Seal',
+  },
+  {
+    id: 454,
+    artistId: '0XSqX2PB3C5dTMv7SZaxSm',
+    name: 'Wolf Parade',
+  },
+  {
+    id: 455,
+    artistId: '1HwM5zlC5qNWhJtM00yXzG',
+    name: 'DMX',
+  },
+  {
+    id: 456,
+    artistId: '2lRyvAihjwylPfhGqydQbC',
+    name: 'Flight of the Conchords',
+  },
+  {
+    id: 457,
+    artistId: '1f5GqyOPo0CkotzzRwviBu',
+    name: 'The Lonely Island',
+  },
+  {
+    id: 458,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 459,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 460,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 461,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 462,
+    artistId: '',
+    name: '',
   },
   {
     id: 9998,
