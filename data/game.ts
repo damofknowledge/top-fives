@@ -2293,26 +2293,216 @@ export const artists: Array<Artist> = [
   },
   {
     id: 458,
-    artistId: '',
-    name: '',
+    artistId: '4tpUmLEVLCGFr93o8hFFIB',
+    name: 'Blondie',
   },
   {
     id: 459,
-    artistId: '',
-    name: '',
+    artistId: '1lYT0A0LV5DUfxr6doRP3d',
+    name: 'The Stone Roses',
   },
   {
     id: 460,
-    artistId: '',
-    name: '',
+    artistId: '60df5JBRRPcnSpsIMxxwQm',
+    name: 'Otis Redding',
   },
   {
     id: 461,
+    artistId: '33EUXrFKGjpUSGacqEHhU4',
+    name: 'Iggy Pop',
+  },
+  {
+    id: 462,
+    artistId: '2RTUTCvo6onsAnheUk3aL9',
+    name: '3 Doors Down',
+  },
+  {
+    id: 463,
+    artistId: '0fgYKF9Avljex0L9Wt5b8Z',
+    name: 'Echo & the Bunnymen',
+  },
+  {
+    id: 464,
     artistId: '',
     name: '',
   },
   {
-    id: 462,
+    id: 465,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 466,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 467,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 468,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 469,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 470,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 471,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 472,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 473,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 474,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 475,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 476,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 477,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 478,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 479,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 480,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 481,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 482,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 483,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 484,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 485,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 486,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 487,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 488,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 489,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 490,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 491,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 492,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 493,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 494,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 495,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 496,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 497,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 498,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 499,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 500,
     artistId: '',
     name: '',
   },
