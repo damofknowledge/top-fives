@@ -2323,38 +2323,38 @@ export const artists: Array<Artist> = [
   },
   {
     id: 464,
-    artistId: '',
-    name: '',
+    artistId: '4vpDg7Y7fU982Ds30zawDA',
+    name: 'The Band',
   },
   {
     id: 465,
-    artistId: '',
-    name: '',
+    artistId: '2bcrMsFlF632EQ6VZERWFu',
+    name: 'The Bravery', // hard
   },
   {
     id: 466,
-    artistId: '',
-    name: '',
+    artistId: '2wzMOQwNT6ZvVB4amvhFAH',
+    name: 'The Pogues',
   },
   {
     id: 467,
-    artistId: '',
-    name: '',
+    artistId: '6ra4GIOgCZQZMOaUECftGN',
+    name: 'Frank Zappa',
   },
   {
     id: 468,
-    artistId: '',
-    name: '',
+    artistId: '68kEuyFKyqrdQQLLsmiatm',
+    name: 'Vince Staples',
   },
   {
     id: 469,
-    artistId: '',
-    name: '',
+    artistId: '3lPQ2Fk5JOwGWAF3ORFCqH',
+    name: 'John Mellencamp',
   },
   {
     id: 470,
-    artistId: '',
-    name: '',
+    artistId: '4RnBFZRiMLRyZy0AzzTg2C',
+    name: 'Run The Jewels',
   },
   {
     id: 471,
