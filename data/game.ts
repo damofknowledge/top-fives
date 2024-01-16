@@ -2503,6 +2503,11 @@ export const artists: Array<Artist> = [
   },
   {
     id: 500,
+    artistId: '06HL4z0CvFAxyc27GXpf02',
+    name: 'Taylor Swift',
+  },
+  {
+    id: 501,
     artistId: '',
     name: '',
   },
