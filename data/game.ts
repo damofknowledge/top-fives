@@ -2358,28 +2358,28 @@ export const artists: Array<Artist> = [
   },
   {
     id: 471,
-    artistId: '',
-    name: '',
+    artistId: '72OaDtakiy6yFqkt4TsiFt',
+    name: 'Cher',
   },
   {
     id: 472,
-    artistId: '',
-    name: '',
+    artistId: '1mmehjf7eHA10uHMisZGJg',
+    name: '!!!',
   },
   {
     id: 473,
-    artistId: '',
-    name: '',
+    artistId: '7jmTilWYlKOuavFfmQAcu6',
+    name: 'Barbra Streisand',
   },
   {
     id: 474,
-    artistId: '',
-    name: '',
+    artistId: '37uLId6Z5ZXCx19vuruvv5',
+    name: 'Hot Chip',
   },
   {
     id: 475,
-    artistId: '',
-    name: '',
+    artistId: '2CvCyf1gEVhI0mX6aFXmVI',
+    name: 'Paul Simon',
   },
   {
     id: 476,
