@@ -20,6 +20,7 @@
           </h2>
           <button
             type="button"
+            data-testid="close-button"
             @click="$emit('closeModal')"
             class="box-content flex items-center justify-center rounded-none border-none p-1 text-xl text-white hover:opacity-75 focus:opacity-75"
           >

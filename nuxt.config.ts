@@ -1,10 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 
 export default defineNuxtConfig({
-  modules: ['@vueuse/nuxt', '@pinia/nuxt', 'nuxt-vitest', 'nuxt-gtag', 'nuxt-security'],
-  gtag: {
-    id: 'G-PDV429ZLER',
-  },
+  modules: ['@vueuse/nuxt', '@pinia/nuxt', '@nuxt/test-utils/module', 'nuxt-security'],
   security: {
     headers: {
       contentSecurityPolicy: {

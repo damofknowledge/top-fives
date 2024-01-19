@@ -18,6 +18,7 @@
 
       <button
         type="button"
+        data-testid="help-button"
         @click="openModal('help')"
         class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
@@ -27,19 +28,21 @@
 
       <button
         type="button"
+        data-testid="stats-button"
         @click="openModal('stats')"
         class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
-        <font-awesome-icon :icon="icons.stats" />
+        <font-awesome-icon :icon="icons.stats" class="h-5 w-5" />
         <span class="sr-only">Stats</span>
       </button>
 
       <button
         type="button"
+        data-testid="archive-button"
         @click="openModal('archive')"
         class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
-        <font-awesome-icon :icon="icons.archive" />
+        <font-awesome-icon :icon="icons.archive" class="h-5 w-5" />
         <span class="sr-only">Archive</span>
       </button>
     </header>
