@@ -2479,7 +2479,7 @@ export const artists: Array<Artist> = [
   {
     id: 495,
     artistId: '',
-    name: '',
+    name: ''
   },
   {
     id: 496,
