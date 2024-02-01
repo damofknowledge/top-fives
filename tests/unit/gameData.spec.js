@@ -7,7 +7,7 @@ describe('Artists array', () => {
   });
 
   it('should contain objects with id, artistId, and name properties', () => {
-    artists.forEach(artist => {
+    artists.forEach((artist) => {
       expect(artist).toHaveProperty('id');
       expect(artist).toHaveProperty('artistId');
       expect(artist).toHaveProperty('name');
@@ -15,7 +15,7 @@ describe('Artists array', () => {
   });
 
   it('should have id as number, artistId and name as string', () => {
-    artists.forEach(artist => {
+    artists.forEach((artist) => {
       expect(typeof artist.id).toBe('number');
       expect(typeof artist.artistId).toBe('string');
       expect(typeof artist.name).toBe('string');
