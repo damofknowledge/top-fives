@@ -1,6 +1,10 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { mount } from '@vue/test-utils';
 import ButtonShare from '../../components/ButtonShare.vue';
+import { createTestingPinia } from '@pinia/testing';
+import { useGameStore } from '@/stores/game';
+
+const game = useGameStore();
 
 describe('ButtonShare.vue', () => {
   let wrapper;
@@ -13,13 +17,19 @@ describe('ButtonShare.vue', () => {
 
     wrapper = mount(ButtonShare, {
       global: {
+        plugins: [createTestingPinia()],
         mocks: {
           useClipboard: () => ({ copy: mockCopy }),
           useShare: () => ({ share: mockShare, isSupported: true }),
-          useGameStore: () => ({}),
         },
       },
     });
+
+    game.status = 'complete';
+    game.artist = {
+      name: 'Test Artist',
+      artistId: '12345',
+    };
   });
 
   it('renders a button', () => {
