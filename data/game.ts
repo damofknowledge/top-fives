@@ -2478,28 +2478,28 @@ export const artists: Array<Artist> = [
   },
   {
     id: 495,
-    artistId: '',
-    name: '',
+    artistId: '4WquJweZPIK9qcfVFhTKvf',
+    name: 'MC5',
   },
   {
     id: 496,
-    artistId: '',
-    name: '',
+    artistId: '2JXDwIo5HsiwTcTPQytrZ8',
+    name: 'Sponge',
   },
   {
     id: 497,
-    artistId: '',
-    name: '',
+    artistId: '1nIUhcKHnK6iyumRyoV68C',
+    name: 'Ennio Morricone',
   },
   {
     id: 498,
-    artistId: '',
-    name: '',
+    artistId: '3dRfiJ2650SZu6GbydcHNb',
+    name: 'John Williams',
   },
   {
     id: 499,
-    artistId: '',
-    name: '',
+    artistId: '2Sp19cOHSqAUlE64hekARW',
+    name: 'Teenage Fanclub',
   },
   {
     id: 500,
@@ -2508,6 +2508,51 @@ export const artists: Array<Artist> = [
   },
   {
     id: 501,
+    artistId: '2auiVi8sUZo17dLy1HwrTU',
+    name: 'Solange',
+  },
+  {
+    id: 502,
+    artistId: '0Nn9YwJzcaeuU1jJL06e3r',
+    name: 'The Knack',
+  },
+  {
+    id: 503,
+    artistId: '6V03b3Y36lolYP2orXn8mV',
+    name: '98°',
+  },
+  {
+    id: 504,
+    artistId: '2P3cjUru4H3fhSXXNxE9kA',
+    name: 'Blackstreet',
+  },
+  {
+    id: 505,
+    artistId: '3zunDAtRDg7kflREzWAhxl',
+    name: 'Eels',
+  },
+  {
+    id: 506,
+    artistId: '1dLWg6m8RRhizsdqJbhyj3',
+    name: 'Quiet Riot',
+  },
+  {
+    id: 507,
+    artistId: '2jzc5TC5TVFLXQlBNiIUzE',
+    name: 'a-ha',
+  },
+  {
+    id: 508,
+    artistId: '2CIMQHirSU0MQqyYHq0eOx',
+    name: 'deadmau5',
+  },
+  {
+    id: 509,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 510,
     artistId: '',
     name: '',
   },
