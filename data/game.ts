@@ -2548,13 +2548,13 @@ export const artists: Array<Artist> = [
   },
   {
     id: 509,
-    artistId: '',
-    name: '',
+    artistId: '17lzZA2AlOHwCwFALHttmp',
+    name: '2 Chainz',
   },
   {
     id: 510,
-    artistId: '',
-    name: '',
+    artistId: '6LqNN22kT3074XbTVUrhzX',
+    name: 'Kesha',
   },
   {
     id: 9998,
