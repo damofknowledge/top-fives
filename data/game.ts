@@ -2557,6 +2557,81 @@ export const artists: Array<Artist> = [
     name: 'Kesha',
   },
   {
+    id: 511,
+    artistId: '6zdwVjGPgGGZ7W5oBcisP2',
+    name: 'The Long Winters', // xtra hard
+  },
+  {
+    id: 512,
+    artistId: '1l7ZsJRRS8wlW3WfJfPfNS',
+    name: 'Christina Aguilera',
+  },
+  {
+    id: 513,
+    artistId: '1aEYCT7t18aM3VvM6y8oVR',
+    name: 'Alkaline Trio',
+  },
+  {
+    id: 514,
+    artistId: '0kbYTNQb4Pb1rPbbaF0pT4',
+    name: 'Miles Davis',
+  },
+  {
+    id: 515,
+    artistId: '1tpXaFf2F55E7kVJON4j4G',
+    name: 'Black Rebel Motorcycle Club', // hard
+  },
+  {
+    id: 516,
+    artistId: '6oBm8HB0yfrIc9IHbxs6in',
+    name: 'Lykke Li',
+  },
+  {
+    id: 517,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 518,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 519,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 520,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 521,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 522,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 523,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 524,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 525,
+    artistId: '',
+    name: '',
+  },
+  {
     id: 9998,
     artistId: '6P7H3ai06vU1sGvdpBwDmE',
     name: 'Steely Dan',
