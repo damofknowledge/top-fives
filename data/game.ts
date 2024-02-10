@@ -2588,33 +2588,33 @@ export const artists: Array<Artist> = [
   },
   {
     id: 517,
-    artistId: '',
-    name: '',
+    artistId: '0Ak6DLKHtpR6TEEnmcorKA',
+    name: 'The Vaccines',
   },
   {
     id: 518,
-    artistId: '',
-    name: '',
+    artistId: '4tBNwdhdWAXGzzaPTp9dRE',
+    name: 'Jason Molina', // hard
   },
   {
     id: 519,
-    artistId: '',
-    name: '',
+    artistId: '0asVlqTLu3TimnYVyY5Jxi',
+    name: 'Tune-Yards',
   },
   {
     id: 520,
-    artistId: '',
-    name: '',
+    artistId: '6ca3AFdIIgaP4ZIW8J6zXu',
+    name: 'Bluey',
   },
   {
     id: 521,
-    artistId: '',
-    name: '',
+    artistId: '6SXTTUJxIVwMbc1POrviTr',
+    name: 'Cocomelon',
   },
   {
     id: 522,
-    artistId: '',
-    name: '',
+    artistId: '3mv2eHwrIONSkviASDMRMa',
+    name: 'Califone', // hard
   },
   {
     id: 523,
