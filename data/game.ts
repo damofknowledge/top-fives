@@ -2618,16 +2618,141 @@ export const artists: Array<Artist> = [
   },
   {
     id: 523,
-    artistId: '',
-    name: '',
+    artistId: '6PHIK3kjWggLtVygsOtpqS',
+    name: 'Suede',
   },
   {
     id: 524,
+    artistId: '6eUKZXaKkcviH0Ku9w2n3V',
+    name: 'Ed Sheeran',
+  },
+  {
+    id: 525,
+    artistId: '23zg3TcAtWQy7J6upgbUnj',
+    name: 'Usher',
+  },
+  {
+    id: 526,
+    artistId: '02rd0anEWfMtF7iMku9uor',
+    name: 'Reba McEntire',
+  },
+  {
+    id: 527,
+    artistId: '2lolQgalUvZDfp5vvVtTYV',
+    name: 'Tony Bennett',
+  },
+  {
+    id: 528,
+    artistId: '2dPqql8xbby3nWuf98mAza',
+    name: 'William Shatner',
+  },
+  {
+    id: 529,
+    artistId: '3XHO7cRUPCLOr6jwp8vsx5',
+    name: 'alt-J',
+  },
+  {
+    id: 530,
     artistId: '',
     name: '',
   },
   {
-    id: 525,
+    id: 531,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 532,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 533,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 534,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 535,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 536,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 537,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 538,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 539,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 540,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 541,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 542,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 543,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 544,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 545,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 546,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 547,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 548,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 549,
+    artistId: '',
+    name: '',
+  },
+  {
+    id: 550,
     artistId: '',
     name: '',
   },
