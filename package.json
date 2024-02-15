@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --https --ssl-key local-key.pem --ssl-cert local-cert.pem --port 3000",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "lint": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
     "postinstall": "nuxt prepare",

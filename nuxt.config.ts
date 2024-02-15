@@ -50,4 +50,10 @@ export default defineNuxtConfig({
       '@fortawesome/free-solid-svg-icons',
     ],
   },
+  devServer: {
+    https: {
+      key: './local-key.pem',
+      cert: './local-cert.pem'
+    }
+  }
 });
