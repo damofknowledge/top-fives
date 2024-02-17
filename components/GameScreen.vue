@@ -54,29 +54,13 @@
               </ul>
             </div>
           </OnClickOutside>
-          <button
+          <PreviewButton
             v-if="game.status === 'complete'"
-            type="button"
-            @click="preview(i)"
+            @preview="preview(i)"
+            :track="state.topTracks[i]"
+            :index="i"
             ref="answerAudioControls"
-            class="h-9 w-9 rounded bg-cyan-600 text-lg text-white enabled:hover:bg-cyan-900 disabled:bg-transparent disabled:opacity-50"
-            :disabled="!state.topTracks[i].preview_url"
-          >
-            <span class="sr-only" v-if="!state.topTracks[i].preview_url">
-              A preview of this song is not available
-            </span>
-            <template v-else>
-              <font-awesome-icon class="play" :icon="icons.play" />
-              <font-awesome-icon class="stop" :icon="icons.stop" />
-            </template>
-            <span class="sr-only">
-              <audio ref="answerAudios" :src="state.topTracks[i].preview_url">
-                <a :href="state.topTracks[i].preview_url">
-                  Preview {{ state.topTracks[i].name }}
-                </a>
-              </audio>
-            </span>
-          </button>
+          ></PreviewButton>
         </div>
         <p v-if="game.answers[i].error" class="pt-1 leading-4 text-rose-500">
           <small>{{ game.answers[i].error }}</small>
@@ -119,26 +103,24 @@ import { differenceInDays } from 'date-fns';
 import endpoints from '@/data/endpoints';
 import { artists } from '@/data/game';
 import type { Artist, Answer, Track, Distributions } from '@/data/types';
-import { faMusic, faLock, faUnlock, faNotdef, faStop } from '@fortawesome/free-solid-svg-icons';
+import { faLock, faUnlock, faNotdef } from '@fortawesome/free-solid-svg-icons';
 import { OnClickOutside } from '@vueuse/components';
 import { stringSimilarity } from 'string-similarity-js';
+import PreviewButton from '@/components/PreviewButton.vue';
 
 const router = useRouter();
 const route = useRoute();
 
 const icons = {
-  play: faMusic,
   lock: faLock,
   unlock: faUnlock,
   missing: faNotdef,
-  stop: faStop,
 };
 
 const answerWrappers = ref([]);
 const answerInputs = ref([]);
 const answerSubmits = ref([]);
 const answerAudioControls = ref([]);
-const answerAudios = ref([]);
 
 const launchDate = new Date('2022-11-22T00:00:00');
 const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
@@ -566,31 +548,15 @@ const check = (idx: number) => {
 };
 
 const preview = (idx: number) => {
-  let control = answerAudioControls.value[idx] as HTMLButtonElement;
-  let audio = answerAudios.value[idx] as HTMLAudioElement;
-
-  // toggle current control
-  if (control.hasAttribute('data-playing')) {
-    audio.pause();
-    audio.currentTime = 0;
-    control.removeAttribute('data-playing');
-    return;
-  }
-
-  // stop and reset all controls
   answerAudioControls.value.forEach((_, index) => {
-    let audio = answerAudios.value[index] as HTMLAudioElement;
-    audio.pause();
-    audio.currentTime = 0;
-    let control = answerAudioControls.value[index] as HTMLButtonElement;
-    control.removeAttribute('data-playing');
+    let control = answerAudioControls.value[index] as typeof PreviewButton;
+    if (index === idx) {
+      control.play();
+    } else {
+      // stop any other previews playing
+      control.stop();
+    }
   });
-
-  // activate clicked preview
-  const currentAudio = answerAudios.value[idx] as HTMLAudioElement;
-  currentAudio.play();
-  const currentControl = answerAudioControls.value[idx] as HTMLButtonElement;
-  currentControl.setAttribute('data-playing', '');
 };
 
 const checkAll = () => {
