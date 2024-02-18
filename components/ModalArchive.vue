@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { artists } from '@/data/game';
+import { staticArtists } from '@/data/game';
 import type { Artist } from '@/data/types';
 
 import { subDays, format, differenceInDays } from 'date-fns';
@@ -44,7 +44,7 @@ import { subDays, format, differenceInDays } from 'date-fns';
 const launchDate = new Date('2022-11-22T00:00:00');
 const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
 
-const currentArtist = artists.find((a: Artist) => a.id === artistIndex) || artists[1];
+const currentArtist = staticArtists.find((a: Artist) => a.id === artistIndex) || staticArtists[1];
 
 const currentGame: any = {
   date: format(Date.now(), 'MM/dd/yyyy'),
@@ -58,7 +58,7 @@ const previousGames = computed(() => {
   let subDay = 1;
 
   while (current >= 1) {
-    const artist = artists.find((a: Artist) => a.id === current);
+    const artist = staticArtists.find((a: Artist) => a.id === current);
     if (artist) {
       let saveArtist = {
         date: format(subDays(currentDate, subDay), 'MM/dd/yyyy'),

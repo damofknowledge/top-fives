@@ -1,6 +1,6 @@
 import type { Artist } from '@/data/types';
 
-export const artists: Array<Artist> = [
+export const staticArtists: Array<Artist> = [
   {
     id: 1,
     artistId: '3jOstUTkEu2JkjvRdBA5Gu',
@@ -2722,41 +2722,6 @@ export const artists: Array<Artist> = [
     name: 'Sly & The Family Stone',
   },
   {
-    id: 544,
-    artistId: '',
-    name: '',
-  },
-  {
-    id: 545,
-    artistId: '',
-    name: '',
-  },
-  {
-    id: 546,
-    artistId: '',
-    name: '',
-  },
-  {
-    id: 547,
-    artistId: '',
-    name: '',
-  },
-  {
-    id: 548,
-    artistId: '',
-    name: '',
-  },
-  {
-    id: 549,
-    artistId: '',
-    name: '',
-  },
-  {
-    id: 550,
-    artistId: '',
-    name: '',
-  },
-  {
     id: 9998,
     artistId: '6P7H3ai06vU1sGvdpBwDmE',
     name: 'Steely Dan',
@@ -2767,3 +2732,4 @@ export const artists: Array<Artist> = [
     name: 'Phish',
   },
 ];
+

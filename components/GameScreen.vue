@@ -56,7 +56,7 @@
           </OnClickOutside>
           <PreviewButton
             v-if="game.status === 'complete'"
-            @preview="preview(i)"
+            @preview="songPreview(i)"
             :track="state.topTracks[i]"
             :index="i"
             ref="answerAudioControls"
@@ -101,7 +101,7 @@
 import { useGameStore } from '@/stores/game';
 import { differenceInDays } from 'date-fns';
 import endpoints from '@/data/endpoints';
-import { artists } from '@/data/game';
+import { staticArtists } from '@/data/game';
 import type { Artist, Answer, Track, Distributions } from '@/data/types';
 import { faLock, faUnlock, faNotdef } from '@fortawesome/free-solid-svg-icons';
 import { OnClickOutside } from '@vueuse/components';
@@ -547,13 +547,12 @@ const check = (idx: number) => {
   saveGame();
 };
 
-const preview = (idx: number) => {
+const songPreview = (idx: number) => {
   answerAudioControls.value.forEach((_, index) => {
     let control = answerAudioControls.value[index] as typeof PreviewButton;
     if (index === idx) {
       control.play();
     } else {
-      // stop any other previews playing
       control.stop();
     }
   });
@@ -599,16 +598,33 @@ const handleSelect = async (idx: number, track: string) => {
 };
 
 const init = async () => {
-  archive = Number(route.params.game);
+  archive = Number(route.params.game);  
 
-  if (!isArchive.value) {
-    game.setArtist(artists.find((a: Artist) => a.id === artistIndex) || artists[0]);
+  // Don't allow access to games that are not available yet
+  if (archive >= artistIndex) {
+    console.error('This game is not available yet, sending you back to the home page.');
+    router.push('/');
+  }
+  
+  // Get today's or archive artist?
+  const getIndex = !isArchive.value ? artistIndex : archive;
+
+  // Fetch artist data from DB
+  const { artists } = await $fetch(`/api/get-artist?id=${getIndex}`);
+  
+  if (artists.length) {
+    game.setArtist(artists[0]);
   } else {
-    game.setArtist(artists.find((a: Artist) => a.id === archive));
-    if (archive >= artistIndex) {
-      console.error('This game is not available yet, sending you back to the home page.');
-      router.push('/');
-    }
+    const artist = staticArtists.find((a: Artist) => a.id === getIndex);
+    
+    // Fallback to static data if artist is unavailable
+    game.setArtist(artist);
+    
+    // post static value to database for future use
+    // await $fetch('/api/post-artist', {
+    //   method: 'post',
+    //   body: { artistId: artist?.artistId, name: artist?.name }
+    // });
   }
 
   const mode = localStorage.getItem('hardMode');
@@ -669,21 +685,5 @@ ol {
 
 .search-results-wrapper {
   max-height: 300px;
-}
-
-button .play {
-  display: var(--fa-display, inline-block);
-}
-
-button .stop {
-  display: none;
-}
-
-button[data-playing] .play {
-  display: none;
-}
-
-button[data-playing] .stop {
-  display: var(--fa-display, inline-block);
 }
 </style>
