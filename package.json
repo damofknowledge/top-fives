@@ -59,6 +59,7 @@
     "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.7.2",
     "buffer": "^6.0.3"
   },
   "packageManager": "yarn@3.6.3"
