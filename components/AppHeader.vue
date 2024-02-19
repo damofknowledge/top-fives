@@ -100,12 +100,22 @@ watch(
 );
 
 onMounted(async () => {
+  const gameVersion = localStorage.getItem('t5');
+
+  // Total reset of local data for Game v3
+  if (gameVersion === null) {
+    for (let i = 1; i <= 454; i++) {
+      localStorage.removeItem(i.toString());
+    }
+    localStorage.removeItem('stats');
+    localStorage.removeItem('new');
+    localStorage.setItem('t5', '3');
+  }
+
   const showInstructions = localStorage.getItem('new');
   if (showInstructions === null) {
     openModal('help');
     localStorage.setItem('new', '0');
-  } else {
-    // TODO: build storage reset tool
   }
 });
 </script>

@@ -2,6 +2,8 @@
   <div class="leading-6">
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">What is This?</h3>
 
+    <p class="mb-4 italic">Updated: 2024-02-19</p>
+
     <p class="mb-4">
       Top Fives is a daily game that challenges you to guess a musical artist’s most popular songs,
       as told by Spotify.

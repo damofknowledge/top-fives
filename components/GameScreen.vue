@@ -615,7 +615,6 @@ const init = async () => {
   if (artists.length) {
     game.setArtist(artists[0]);
   } else {
-    
     const artist = staticArtists.find((a: Artist) => a.id === getIndex);
 
     // Fallback to static data if artist is unavailable
