@@ -598,28 +598,28 @@ const handleSelect = async (idx: number, track: string) => {
 };
 
 const init = async () => {
-  archive = Number(route.params.game);  
+  archive = Number(route.params.game);
 
   // Don't allow access to games that are not available yet
   if (archive >= artistIndex) {
     console.error('This game is not available yet, sending you back to the home page.');
     router.push('/');
   }
-  
+
   // Get today's or archive artist?
   const getIndex = !isArchive.value ? artistIndex : archive;
 
   // Fetch artist data from DB
   const { artists } = await $fetch(`/api/get-artist?id=${getIndex}`);
-  
+
   if (artists.length) {
     game.setArtist(artists[0]);
   } else {
     const artist = staticArtists.find((a: Artist) => a.id === getIndex);
-    
+
     // Fallback to static data if artist is unavailable
     game.setArtist(artist);
-    
+
     // post static value to database for future use
     // await $fetch('/api/post-artist', {
     //   method: 'post',

@@ -1,7 +1,7 @@
 import { createPool } from '@vercel/postgres';
 
 export default defineEventHandler(async (event) => {
-  const query = getQuery(event)
+  const query = getQuery(event);
 
   const db = createPool();
   try {
@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
     } else {
       throw error;
     }
-    return { 
+    return {
       artists: [],
     };
   }

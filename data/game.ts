@@ -1,6 +1,6 @@
 import type { Artist } from '@/data/types';
 /**
- * Deprecating this file in favor of the `artists` table from `api/get-artist.ts`
+ * Deprecating this file in favor of the `artists` table and `api/get-artist.ts`
  */
 export const staticArtists: Array<Artist> = [
   {
@@ -55,11 +55,6 @@ export const staticArtists: Array<Artist> = [
   },
   {
     id: 11,
-    artistId: '7jVv8c5Fj3E9VhNjxT4snq',
-    name: 'Lil Nas X',
-  },
-  {
-    id: 12,
     artistId: '2x9SpqnPi8rlE9pjHBwmSC',
     name: 'Talking Heads',
   },
@@ -244,16 +239,6 @@ export const staticArtists: Array<Artist> = [
     name: 'LCD Soundsystem',
   },
   {
-    id: 49,
-    artistId: '7MoIc5s9KXolCBH1fy9kkw',
-    name: 'Japanese Breakfast',
-  },
-  {
-    id: 50,
-    artistId: '3HJIB8sYPyxrFGuwvKXSLR',
-    name: 'TV on the Radio',
-  },
-  {
     id: 51,
     artistId: '7t0rwkOPGlDPEhaOcVtOt9',
     name: 'The Cranberries',
@@ -277,11 +262,6 @@ export const staticArtists: Array<Artist> = [
     id: 55,
     artistId: '6zB02lwP6L6ZH32nggQiJT',
     name: 'They Might Be Giants',
-  },
-  {
-    id: 56,
-    artistId: '4MSMDY0ClgWqXApU53I1L1',
-    name: 'Matt and Kim',
   },
   {
     id: 57,
@@ -395,58 +375,33 @@ export const staticArtists: Array<Artist> = [
   },
   {
     id: 79,
-    artistId: '7bcbShaqKdcyjnmv4Ix8j6',
-    name: 'St. Vincent',
-  },
-  {
-    id: 80,
-    artistId: '1ahN3WDDULKaAQs7ZUrGNP',
-    name: 'Sloan',
-  },
-  {
-    id: 81,
     artistId: '3oDbviiivRWhXwIE8hxkVV',
     name: 'The Beach Boys',
   },
   {
-    id: 82,
+    id: 80,
     artistId: '3qm84nBOXUEQ2vnTfUTTFC',
     name: 'Guns N’ Roses',
   },
   {
-    id: 83,
-    artistId: '5pKCCKE2ajJHZ9KAiaK11H',
-    name: 'Rihanna (Big Game Day Edition)',
-  },
-  {
-    id: 84,
+    id: 81,
     artistId: '0epOFNiUfyON9EYx7Tpr6V',
     name: 'The Strokes',
   },
   {
-    id: 85,
+    id: 82,
     artistId: '3fMbdgg4jU18AjLCKBhRSm',
     name: 'Michael Jackson',
   },
   {
-    id: 86,
+    id: 83,
     artistId: '5BvJzeQpmsdsFp4HGUYUEx',
     name: 'Vampire Weekend',
   },
   {
-    id: 87,
+    id: 84,
     artistId: '5e4Dhzv426EvQe3aDb64jL',
     name: 'Shania Twain',
-  },
-  {
-    id: 88,
-    artistId: '5CuU6SRJjbbZL926nSGGxX',
-    name: 'Open Mike Eagle',
-  },
-  {
-    id: 89,
-    artistId: '0K1q0nXQ8is36PzOKAMbNe',
-    name: 'Spoon',
   },
   {
     id: 90,
@@ -467,11 +422,6 @@ export const staticArtists: Array<Artist> = [
     id: 93,
     artistId: '74XFHRwlV6OrjEM0A2NCMF',
     name: 'Paramore',
-  },
-  {
-    id: 94,
-    artistId: '3YQKmKGau1PzlVlkL1iodx',
-    name: 'Twenty One Pilots',
   },
   {
     id: 95,
@@ -509,11 +459,6 @@ export const staticArtists: Array<Artist> = [
     name: 'Pixies',
   },
   {
-    id: 102,
-    artistId: '2VIoWte1HPDbZ2WqHd2La7',
-    name: 'The Turtles',
-  },
-  {
     id: 103,
     artistId: '3kjuyTCjPG1WMFCiyc5IuB',
     name: 'Arcade Fire',
@@ -549,19 +494,9 @@ export const staticArtists: Array<Artist> = [
     name: 'Bon Jovi',
   },
   {
-    id: 110,
-    artistId: '7fu6ebyL3JGXJgo5zsOo4k',
-    name: 'Harvey Danger',
-  },
-  {
     id: 111,
     artistId: '4KWTAlx2RvbpseOGMEmROg',
     name: 'R.E.M.',
-  },
-  {
-    id: 112,
-    artistId: '1rCIEwPp5OnXW0ornlSsRl',
-    name: 'Metric',
   },
   {
     id: 113,
@@ -572,26 +507,6 @@ export const staticArtists: Array<Artist> = [
     id: 114,
     artistId: '51Blml2LZPmy7TTiAg47vQ',
     name: 'U2',
-  },
-  {
-    id: 115,
-    artistId: '4wLIbcoqmqI4WZHDiBxeCB',
-    name: 'Sleater-Kinney',
-  },
-  {
-    id: 116,
-    artistId: '6FD0unjzGQhX3b6eMccMJe',
-    name: 'Ghostface Killah',
-  },
-  {
-    id: 117,
-    artistId: '6FQqZYVfTNQ1pCqfkwVFEa',
-    name: 'Foals',
-  },
-  {
-    id: 118,
-    artistId: '0OdUWJ0sBjDrqHygGUXeCF',
-    name: 'Band of Horses',
   },
   {
     id: 119,
@@ -619,29 +534,9 @@ export const staticArtists: Array<Artist> = [
     name: 'Phoenix',
   },
   {
-    id: 123,
-    artistId: '5yV1qdnmxyIYiSFB02wpDj',
-    name: 'The Postal Service',
-  },
-  {
-    id: 124,
-    artistId: '2h93pZq0e7k5yf4dywlkpM',
-    name: 'Frank Ocean',
-  },
-  {
-    id: 125,
-    artistId: '4mO4aGO6u29UyR6XLZR9XW',
-    name: 'The New Pornographers',
-  },
-  {
     id: 126,
     artistId: '3koiLjNrgRTNbOwViDipeA',
     name: 'Marvin Gaye',
-  },
-  {
-    id: 127,
-    artistId: '41AbNVba2ccpmcc9QtOJE7',
-    name: 'Kings of Convenience',
   },
   {
     id: 128,
@@ -2439,299 +2334,68 @@ export const staticArtists: Array<Artist> = [
     name: 'The Jesus and Mary Chain',
   },
   {
-    id: 487,
+    id: 354,
     artistId: '0vEsuISMWAKNctLlUAhSZC',
     name: 'Counting Crows',
   },
   {
-    id: 488,
-    artistId: '2GVBp7QyHckoOg7rYkLvrA',
-    name: 'George Clinton',
-  },
-  {
-    id: 489,
-    artistId: '5SMVzTJyKFJ7TUb46DglcH',
-    name: 'Parliament',
-  },
-  {
-    id: 490,
+    id: 355,
     artistId: '7w29UYBi0qsHi5RTcv3lmA',
     name: 'Björk',
   },
   {
-    id: 491,
-    artistId: '267VY6GX5LyU5c9M85ECZQ',
-    name: 'Dinosaur Jr.',
-  },
-  {
-    id: 492,
-    artistId: '1gR0gsQYfi6joyO1dlp76N',
-    name: 'Justice',
-  },
-  {
-    id: 493,
-    artistId: '2zAvisjImPICTNsRgagqlV',
-    name: 'Bonnie Prince Billy',
-  },
-  {
-    id: 494,
-    artistId: '75dQReiBOHN37fQgWQrIAJ',
-    name: 'Local Natives',
-  },
-  {
-    id: 495,
+    id: 356,
     artistId: '4WquJweZPIK9qcfVFhTKvf',
     name: 'MC5',
   },
   {
-    id: 496,
-    artistId: '2JXDwIo5HsiwTcTPQytrZ8',
-    name: 'Sponge',
-  },
-  {
-    id: 497,
-    artistId: '1nIUhcKHnK6iyumRyoV68C',
-    name: 'Ennio Morricone',
-  },
-  {
-    id: 498,
-    artistId: '3dRfiJ2650SZu6GbydcHNb',
-    name: 'John Williams',
-  },
-  {
-    id: 499,
-    artistId: '2Sp19cOHSqAUlE64hekARW',
-    name: 'Teenage Fanclub',
-  },
-  {
-    id: 500,
-    artistId: '06HL4z0CvFAxyc27GXpf02',
-    name: 'Taylor Swift',
-  },
-  {
-    id: 501,
-    artistId: '2auiVi8sUZo17dLy1HwrTU',
-    name: 'Solange',
-  },
-  {
-    id: 502,
-    artistId: '0Nn9YwJzcaeuU1jJL06e3r',
-    name: 'The Knack',
-  },
-  {
-    id: 503,
-    artistId: '6V03b3Y36lolYP2orXn8mV',
-    name: '98°',
-  },
-  {
-    id: 504,
-    artistId: '2P3cjUru4H3fhSXXNxE9kA',
-    name: 'Blackstreet',
-  },
-  {
-    id: 505,
-    artistId: '3zunDAtRDg7kflREzWAhxl',
-    name: 'Eels',
-  },
-  {
-    id: 506,
-    artistId: '1dLWg6m8RRhizsdqJbhyj3',
-    name: 'Quiet Riot',
-  },
-  {
-    id: 507,
-    artistId: '2jzc5TC5TVFLXQlBNiIUzE',
-    name: 'a-ha',
-  },
-  {
-    id: 508,
+    id: 357,
     artistId: '2CIMQHirSU0MQqyYHq0eOx',
     name: 'deadmau5',
   },
   {
-    id: 509,
-    artistId: '17lzZA2AlOHwCwFALHttmp',
-    name: '2 Chainz',
-  },
-  {
-    id: 510,
-    artistId: '6LqNN22kT3074XbTVUrhzX',
-    name: 'Kesha',
-  },
-  {
-    id: 511,
-    artistId: '6zdwVjGPgGGZ7W5oBcisP2',
-    name: 'The Long Winters', // xtra hard
-  },
-  {
-    id: 512,
+    id: 358,
     artistId: '1l7ZsJRRS8wlW3WfJfPfNS',
     name: 'Christina Aguilera',
   },
   {
-    id: 513,
-    artistId: '1aEYCT7t18aM3VvM6y8oVR',
-    name: 'Alkaline Trio',
-  },
-  {
-    id: 514,
+    id: 359,
     artistId: '0kbYTNQb4Pb1rPbbaF0pT4',
     name: 'Miles Davis',
   },
   {
-    id: 515,
-    artistId: '1tpXaFf2F55E7kVJON4j4G',
-    name: 'Black Rebel Motorcycle Club', // hard
-  },
-  {
-    id: 516,
-    artistId: '6oBm8HB0yfrIc9IHbxs6in',
-    name: 'Lykke Li',
-  },
-  {
-    id: 517,
-    artistId: '0Ak6DLKHtpR6TEEnmcorKA',
-    name: 'The Vaccines',
-  },
-  {
-    id: 518,
-    artistId: '4tBNwdhdWAXGzzaPTp9dRE',
-    name: 'Jason Molina', // hard
-  },
-  {
-    id: 519,
-    artistId: '0asVlqTLu3TimnYVyY5Jxi',
-    name: 'Tune-Yards',
-  },
-  {
-    id: 520,
-    artistId: '6ca3AFdIIgaP4ZIW8J6zXu',
-    name: 'Bluey',
-  },
-  {
-    id: 521,
-    artistId: '6SXTTUJxIVwMbc1POrviTr',
-    name: 'Cocomelon',
-  },
-  {
-    id: 522,
-    artistId: '3mv2eHwrIONSkviASDMRMa',
-    name: 'Califone', // hard
-  },
-  {
-    id: 523,
-    artistId: '6PHIK3kjWggLtVygsOtpqS',
-    name: 'Suede',
-  },
-  {
-    id: 524,
+    id: 360,
     artistId: '6eUKZXaKkcviH0Ku9w2n3V',
     name: 'Ed Sheeran',
   },
   {
-    id: 525,
+    id: 361,
     artistId: '23zg3TcAtWQy7J6upgbUnj',
     name: 'Usher',
   },
   {
-    id: 526,
-    artistId: '02rd0anEWfMtF7iMku9uor',
-    name: 'Reba McEntire',
-  },
-  {
-    id: 527,
-    artistId: '2lolQgalUvZDfp5vvVtTYV',
-    name: 'Tony Bennett',
-  },
-  {
-    id: 528,
-    artistId: '2dPqql8xbby3nWuf98mAza',
-    name: 'William Shatner',
-  },
-  {
-    id: 529,
-    artistId: '3XHO7cRUPCLOr6jwp8vsx5',
-    name: 'alt-J',
-  },
-  {
-    id: 530,
+    id: 362,
     artistId: '3nFkdlSjzX9mRTtwJOzDYB',
     name: 'JAY-Z',
   },
   {
-    id: 531,
-    artistId: '6xTk3EK5T9UzudENVvu9YB',
-    name: 'Rancid',
-  },
-  {
-    id: 532,
-    artistId: '13dTrWNNrnZ3AkgNyQNKP5',
-    name: 'The Linda Lindas',
-  },
-  {
-    id: 533,
-    artistId: '7DjwIxbe8kpw4pqnzAMoin',
-    name: 'The Beths', // hard
-  },
-  {
-    id: 534,
-    artistId: '0BvkDsjIUla7X0k6CSWh1I',
-    name: 'Luke Bryan',
-  },
-  {
-    id: 535,
+    id: 363,
     artistId: '7mnBLXK823vNxN3UWB7Gfz',
     name: 'The Black Keys',
   },
   {
-    id: 536,
+    id: 364,
     artistId: '2BTZIqw0ntH9MvilQ3ewNY',
     name: 'Cyndi Lauper',
   },
   {
-    id: 537,
-    artistId: '1aSxMhuvixZ8h9dK9jIDwL',
-    name: 'Kate Bush',
-  },
-  {
-    id: 538,
-    artistId: '6QtGlUje9TIkLrgPZrESuk',
-    name: 'Steve Miller Band',
-  },
-  {
-    id: 539,
-    artistId: '07XSN3sPlIlB2L2XNcTwJw',
-    name: 'KISS',
-  },
-  {
-    id: 540,
-    artistId: '31v7ijnAMVL9V7Uzr1sFcI',
-    name: 'The Suicide Machines',
-  },
-  {
-    id: 541,
+    id: 365,
     artistId: '1u7kkVrr14iBvrpYnZILJR',
     name: 'Sex Pistols',
   },
   {
-    id: 542,
-    artistId: '3IKV7o6WPphDB7cCWXaG3E',
-    name: 'Isaac Hayes',
-  },
-  {
-    id: 543,
-    artistId: '5m8H6zSadhu1j9Yi04VLqD',
-    name: 'Sly & The Family Stone',
-  },
-  {
-    id: 9998,
+    id: 366,
     artistId: '6P7H3ai06vU1sGvdpBwDmE',
     name: 'Steely Dan',
   },
-  {
-    id: 9999,
-    artistId: '5wbIWUzTPuTxTyG6ouQKqz',
-    name: 'Phish',
-  },
 ];
-

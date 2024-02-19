@@ -36,7 +36,7 @@
         <span class="sr-only">Stats</span>
       </button>
 
-      <!-- <button
+      <button
         type="button"
         data-testid="archive-button"
         @click="openModal('archive')"
@@ -44,7 +44,7 @@
       >
         <font-awesome-icon :icon="icons.archive" class="h-5 w-5" />
         <span class="sr-only">Archive</span>
-      </button> -->
+      </button>
     </header>
     <div class="bg-cyan-900">
       <p class="container mx-auto px-2 text-sm font-light italic">
