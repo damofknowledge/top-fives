@@ -1,5 +1,7 @@
 import type { Artist } from '@/data/types';
-
+/**
+ * Deprecating this file in favor of the `artists` table from `api/get-artist.ts`
+ */
 export const staticArtists: Array<Artist> = [
   {
     id: 1,
