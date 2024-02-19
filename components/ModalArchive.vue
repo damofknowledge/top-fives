@@ -45,7 +45,7 @@ import type { Artist } from '@/data/types';
 
 import { subDays, format, differenceInDays } from 'date-fns';
 
-const launchDate = new Date('2022-11-22T00:00:00');
+const launchDate = new Date('2022-11-24T00:00:00');
 const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
 
 const { artists, duration } = await $fetch(`/api/get-artists`);

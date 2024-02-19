@@ -104,6 +104,8 @@ onMounted(async () => {
   if (showInstructions === null) {
     openModal('help');
     localStorage.setItem('new', '0');
+  } else {
+    // TODO: build storage reset tool
   }
 });
 </script>

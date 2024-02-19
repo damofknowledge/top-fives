@@ -122,7 +122,7 @@ const answerInputs = ref([]);
 const answerSubmits = ref([]);
 const answerAudioControls = ref([]);
 
-const launchDate = new Date('2022-11-22T00:00:00');
+const launchDate = new Date('2022-11-24T00:00:00');
 const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
 let archive: number = 0;
 
@@ -615,6 +615,7 @@ const init = async () => {
   if (artists.length) {
     game.setArtist(artists[0]);
   } else {
+    
     const artist = staticArtists.find((a: Artist) => a.id === getIndex);
 
     // Fallback to static data if artist is unavailable
