@@ -6,6 +6,10 @@ A funemployment project by [@DamOfKnowledge](https://github.com/damofknowledge)
 
 This project is based on the Nuxt 3 minimal starter project. Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
+## Performance
+
+[PageSpeed Insights 2024-02-19](https://pagespeed.web.dev/analysis/https-topfives-fyi/uxsdekj9cn?hl=en&form_factor=mobile)
+
 ## Setup
 
 Make sure to install the dependencies:
