@@ -834,11 +834,6 @@ export const staticArtists: Array<Artist> = [
     name: 'Conway Twitty',
   },
   {
-    id: 187,
-    artistId: '55Pp4Ns5VfTSFsBraW7MQy',
-    name: 'Skee-Lo',
-  },
-  {
     id: 188,
     artistId: '4BclNkZtAUq1YrYNzye3N7',
     name: 'Garth Brooks',
@@ -847,16 +842,6 @@ export const staticArtists: Array<Artist> = [
     id: 189,
     artistId: '5ksRONqssB7BR161NTtJAm',
     name: 'Ace of Base',
-  },
-  {
-    id: 190,
-    artistId: '2zrZfs23sjuHDv4E6YRmNf',
-    name: 'Kris Kross',
-  },
-  {
-    id: 191,
-    artistId: '695W5F2Ih8dYahLdjVOIoH',
-    name: 'Christopher Cross',
   },
   {
     id: 192,
@@ -889,24 +874,9 @@ export const staticArtists: Array<Artist> = [
     name: 'Anthrax',
   },
   {
-    id: 198,
-    artistId: '5daXMUbrPh8oX9Nd4CnToG',
-    name: 'Stabbing Westward',
-  },
-  {
-    id: 199,
-    artistId: '6waa8mKu91GjzD4NlONlNJ',
-    name: 'The Hollies',
-  },
-  {
     id: 200,
     artistId: '2TI7qyDE0QfyOlnbtfDo7L',
     name: 'Dave Matthews Band',
-  },
-  {
-    id: 201,
-    artistId: '166Dz1GX3xonSQ3Z6CQW26',
-    name: 'The Rapture',
   },
   {
     id: 202,
