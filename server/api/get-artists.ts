@@ -1,7 +1,7 @@
 import { createPool } from '@vercel/postgres';
 
 /**
- * @returns artists - An array of artist objects
+ * @returns artists - An array of artist objects, duration - The time it took to execute the query
  */
 
 export default defineEventHandler(async () => {
@@ -9,7 +9,7 @@ export default defineEventHandler(async () => {
 
   const db = createPool();
   try {
-    const { rows: artists } = await db.query(`SELECT * FROM artists ORDER BY id DESC LIMIT 366`);
+    const { rows: artists } = await db.query(`SELECT * FROM artists ORDER BY id DESC`);
     const duration = Date.now() - startTime;
     return {
       artists: artists,
