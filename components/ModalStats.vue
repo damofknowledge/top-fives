@@ -27,6 +27,15 @@
       </div>
     </div>
 
+    <p class="mb-2">
+      Something not looking right? <button
+        type="button"
+        @click="resetGames()"
+        class="rounded-lg bg-cyan-600 p-1 px-2 text-sm font-bold uppercase transition hover:bg-cyan-900 focus:bg-cyan-900"
+      >
+        <span>Reset Your Game Scores</span>
+      </button>
+    </p>
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">🎯 Distributions</h3>
 
     <p
@@ -84,6 +93,17 @@ const state = reactive({
 const totalScoreOf = computed(() => {
   return state.stats.playCount * 5;
 });
+
+const resetGames = (() => {
+  console.info('Clearing all game, keeping stats, and returning you to today’s game.');
+    
+  for (let i = 1; i <= 1000; i++) {
+    localStorage.removeItem(i.toString());
+  }
+
+  reloadNuxtApp();
+});
+
 onMounted(() => {
   const store = localStorage.getItem('stats');
   const stats = store ? JSON.parse(store) : false;
