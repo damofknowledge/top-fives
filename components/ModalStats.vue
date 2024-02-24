@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <p class="mb-2">
+    <!-- <p class="mb-2">
       Something not looking right? <button
         type="button"
         @click="resetGames()"
@@ -35,7 +35,8 @@
       >
         <span>Reset Your Game Scores</span>
       </button>
-    </p>
+    </p> -->
+    
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">🎯 Distributions</h3>
 
     <p
