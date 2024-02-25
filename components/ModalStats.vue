@@ -36,7 +36,7 @@
         <span>Reset Your Game Scores</span>
       </button>
     </p> -->
-    
+
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">🎯 Distributions</h3>
 
     <p
@@ -95,15 +95,15 @@ const totalScoreOf = computed(() => {
   return state.stats.playCount * 5;
 });
 
-const resetGames = (() => {
-  console.info('Clearing all game, keeping stats, and returning you to today’s game.');
-    
-  for (let i = 1; i <= 1000; i++) {
-    localStorage.removeItem(i.toString());
-  }
+// const resetGames = (() => {
+//   console.info('Clearing all game, keeping stats, and returning you to today’s game.');
 
-  reloadNuxtApp();
-});
+//   for (let i = 1; i <= 1000; i++) {
+//     localStorage.removeItem(i.toString());
+//   }
+
+//   reloadNuxtApp();
+// });
 
 onMounted(() => {
   const store = localStorage.getItem('stats');

@@ -6549,14 +6549,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^13.5.0":
-  version: 13.5.0
-  resolution: "happy-dom@npm:13.5.0"
+"happy-dom@npm:^13.5.3":
+  version: 13.5.3
+  resolution: "happy-dom@npm:13.5.3"
   dependencies:
     entities: ^4.5.0
     webidl-conversions: ^7.0.0
     whatwg-mimetype: ^3.0.0
-  checksum: 61cf9f8f2357ddcc8dc76eecfd9ac78bd7c6dc7402914f6c83ff5cfddb4260298f0af73b3b977abb3b1eee94517824a699ea09bf2ba690a6adbe8be41619ff14
+  checksum: afd607d426375ad4ec007f066b031d26f86e8a9d08bd7062020f662696c395b3d6aab8b293fa666d648dc785080351a48e480bbc853b698d58df6c7ef1a9ce48
   languageName: node
   linkType: hard
 
@@ -11020,7 +11020,7 @@ __metadata:
     eslint-plugin-vitest: ^0.3.22
     eslint-plugin-vuejs-accessibility: ^2.2.1
     focus-trap: ^7.5.4
-    happy-dom: ^13.5.0
+    happy-dom: ^13.5.3
     husky: ^9.0.11
     jsdom: ^24.0.0
     nock: ^13.5.3

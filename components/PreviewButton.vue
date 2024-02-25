@@ -6,18 +6,14 @@
     :disabled="!track.preview_url"
     ref="answerAudioControl"
   >
-    <span class="sr-only" v-if="!track.preview_url">
-      A preview of this song is not available
-    </span>
+    <span class="sr-only" v-if="!track.preview_url"> A preview of this song is not available </span>
     <template v-else>
       <font-awesome-icon class="play" :icon="icons.play" />
       <font-awesome-icon class="stop" :icon="icons.stop" />
     </template>
     <span class="sr-only">
       <audio ref="answerAudio" :src="track.preview_url">
-        <a :href="track.preview_url">
-          Preview {{ track.name }}
-        </a>
+        <a :href="track.preview_url"> Preview {{ track.name }} </a>
       </audio>
     </span>
   </button>
@@ -32,24 +28,24 @@ const icons = {
 };
 
 const props = defineProps({
-    track: {
-      type: Object,
-      required: true,
-    },
-    index: {
-      type: Number,
-      required: true,
-    },
+  track: {
+    type: Object,
+    required: true,
+  },
+  index: {
+    type: Number,
+    required: true,
+  },
 });
 
 const { track, index } = props;
 
-const answerAudioControl = ref(<HTMLButtonElement | null>null); 
-const answerAudio = ref(<HTMLAudioElement | null>null);
+const answerAudioControl = ref(null);
+const answerAudio = ref(null);
 
 const play = () => {
-  let control = answerAudioControl?.value as HTMLButtonElement;
-  let audio = answerAudio?.value as HTMLAudioElement;
+  let control = answerAudioControl?.value as unknown as HTMLButtonElement;
+  let audio = answerAudio?.value as unknown as HTMLAudioElement;
 
   // toggle current control
   if (control.hasAttribute('data-playing')) {
@@ -57,15 +53,15 @@ const play = () => {
     audio.currentTime = 0;
     control.removeAttribute('data-playing');
     return;
-  } 
+  }
 
   audio.play();
   control.setAttribute('data-playing', '');
 };
 
 const stop = () => {
-  let control = answerAudioControl?.value as HTMLButtonElement;
-  let audio = answerAudio?.value as HTMLAudioElement;
+  let control = answerAudioControl?.value as unknown as HTMLButtonElement;
+  let audio = answerAudio?.value as unknown as HTMLAudioElement;
 
   audio.pause();
   audio.currentTime = 0;
@@ -73,8 +69,8 @@ const stop = () => {
 };
 
 defineExpose({
-    play,
-    stop
+  play,
+  stop,
 });
 </script>
 
