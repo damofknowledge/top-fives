@@ -76,46 +76,25 @@
     </ol>
 
     <div>
-      <button
-        type="button"
-        @click="checkAll()"
-        ref="answerSubmits"
-        class="h-9 w-full rounded bg-cyan-600 text-lg leading-none text-white enabled:hover:bg-cyan-900 disabled:bg-transparent disabled:opacity-50"
-        :disabled="game.status === 'complete'"
-      >
-        <font-awesome-icon
-          v-if="game.status !== 'complete'"
-          :icon="icons.unlock"
-          class="align-middle"
-        />
-        <font-awesome-icon v-else :icon="icons.lock" class="align-middle" />
-        <span class="ml-2 text-sm font-bold uppercase">
-          {{ game.status !== 'complete' ? 'Submit' : 'Complete' }}
-        </span>
-      </button>
+      <SubmitButton @checkAll="checkAll()" ref="answerSubmits" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useGameStore } from '@/stores/game';
-import { differenceInDays } from 'date-fns';
+import { differenceInDays, format } from 'date-fns';
 import endpoints from '@/data/endpoints';
 import { staticArtists } from '@/data/game';
 import type { Artist, Answer, Track, Distributions } from '@/data/types';
-import { faLock, faUnlock, faNotdef } from '@fortawesome/free-solid-svg-icons';
 import { OnClickOutside } from '@vueuse/components';
 import { stringSimilarity } from 'string-similarity-js';
 import PreviewButton from '@/components/PreviewButton.vue';
+import SubmitButton from '@/components/SubmitButton.vue';
+import { rand } from '@vueuse/core';
 
 const router = useRouter();
 const route = useRoute();
-
-const icons = {
-  lock: faLock,
-  unlock: faUnlock,
-  missing: faNotdef,
-};
 
 const answerWrappers = ref([]);
 const answerInputs = ref([]);
@@ -615,21 +594,22 @@ const init = async () => {
   if (artists.length) {
     game.setArtist(artists[0]);
   } else {
-    const artist = staticArtists.find((a: Artist) => a.id === getIndex);
+    // Insert artist record into DB from random static data
+    const uniqueId = rand(1, 120);
+    const artist = staticArtists.find((a: Artist) => a.id === uniqueId);
 
-    // Fallback to static data if artist is unavailable
-    game.setArtist(artist);
+    // post game to database for future use
+    await $fetch('/api/post-artist', {
+      method: 'post',
+      body: {
+        artistId: artist?.artistId,
+        name: `${artist?.name} ${format(Date.now(), 'MM/dd/yyyy')}`,
+      },
+    });
 
-    // post static value to database for future use
-    // await $fetch('/api/post-artist', {
-    //   method: 'post',
-    //   body: { artistId: artist?.artistId, name: artist?.name }
-    // });
+    // reload app to get newly inserted artist
+    reloadNuxtApp();
   }
-
-  const mode = localStorage.getItem('hardMode');
-  const gameMode = mode ? Number(JSON.parse(mode)) : true;
-  game.setMode(!!gameMode);
 
   return Promise.resolve();
 };
