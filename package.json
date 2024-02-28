@@ -47,7 +47,7 @@
     "jsdom": "^24.0.0",
     "nock": "^13.5.4",
     "nuxt": "^3.10.3",
-    "nuxt-gtag": "^2.0.1",
+    "nuxt-gtag": "^2.0.4",
     "nuxt-security": "^1.2.1",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",

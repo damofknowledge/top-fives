@@ -8518,15 +8518,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-gtag@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "nuxt-gtag@npm:2.0.1"
+"nuxt-gtag@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "nuxt-gtag@npm:2.0.4"
   dependencies:
     "@nuxt/kit": ^3.10.3
     defu: ^6.1.4
     pathe: ^1.1.2
     ufo: ^1.4.0
-  checksum: b55690667ab310e022eefc808f7d31b4b49b073d60baa2a988c09cad0d20a8124c2ffa3bc1d590037d389782489f864ac6e668fe3f86bf54d36ec90d7e22f210
+  checksum: 3c16c1d845db7028efbe06e6cd57320e22bd4b309a1cf983de210f5610e2622700b89ebec9e890a705135622314f3e2e081d8fece37b23cb143d5837a600820b
   languageName: node
   linkType: hard
 
@@ -11025,7 +11025,7 @@ __metadata:
     jsdom: ^24.0.0
     nock: ^13.5.4
     nuxt: ^3.10.3
-    nuxt-gtag: ^2.0.1
+    nuxt-gtag: ^2.0.4
     nuxt-security: ^1.2.1
     postcss: ^8.4.35
     prettier: ^3.2.5

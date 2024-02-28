@@ -27,16 +27,6 @@
       </div>
     </div>
 
-    <!-- <p class="mb-2">
-      Something not looking right? <button
-        type="button"
-        @click="resetGames()"
-        class="rounded-lg bg-cyan-600 p-1 px-2 text-sm font-bold uppercase transition hover:bg-cyan-900 focus:bg-cyan-900"
-      >
-        <span>Reset Your Game Scores</span>
-      </button>
-    </p> -->
-
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">🎯 Distributions</h3>
 
     <p
@@ -45,7 +35,7 @@
       The number of times you correctly guessed the song and its popularity.
     </p>
 
-    <ol>
+    <ol class="mb-8">
       <li
         v-for="(correct, i) in state.stats.correctDistribution"
         :key="i"
@@ -65,6 +55,21 @@
         <span class="relative z-10">{{ emojiNumber(i - 1) }}</span>
       </li>
     </ol>
+
+    <p class="mb-2" aria-label="reset">
+      Use the <strong>Reset All Saved Games</strong> button to clear all game data on your device.
+    </p>
+
+    <p>
+      <button
+        type="button"
+        aria-labelledby="reset"
+        @click="hardReset()"
+        class="rounded-lg bg-red-600 p-1 px-2 text-sm w-full font-bold uppercase transition hover:bg-red-900 focus:bg-red-900"
+      >
+        <span>Reset All Saved Games</span>
+      </button>
+    </p>
   </div>
 </template>
 
@@ -95,15 +100,10 @@ const totalScoreOf = computed(() => {
   return state.stats.playCount * 5;
 });
 
-// const resetGames = (() => {
-//   console.info('Clearing all game, keeping stats, and returning you to today’s game.');
-
-//   for (let i = 1; i <= 1000; i++) {
-//     localStorage.removeItem(i.toString());
-//   }
-
-//   reloadNuxtApp();
-// });
+const hardReset = () => {
+  localStorage.clear();
+  reloadNuxtApp();
+};
 
 onMounted(() => {
   const store = localStorage.getItem('stats');

@@ -9,7 +9,7 @@ export default defineEventHandler(async () => {
 
   const db = createPool();
   try {
-    const { rows: artists } = await db.query(`SELECT * FROM artists ORDER BY id DESC`);
+    const { rows: artists } = await db.query(`SELECT * FROM artists ORDER BY id DESC LIMIT 30`);
     const duration = Date.now() - startTime;
     return {
       artists: artists,

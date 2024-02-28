@@ -39,8 +39,8 @@
             >
               <ul class="search-results w-full" ref="searchResults">
                 <li
-                  v-for="track in state.searchResults[i]"
-                  :key="track.name"
+                  v-for="(track, index) in state.searchResults[i]"
+                  :key="index"
                   class="border-b border-slate-700 last:border-b-0"
                 >
                   <button
@@ -576,6 +576,10 @@ const handleSelect = async (idx: number, track: string) => {
   }
 };
 
+// const handleArrows = async (idx: number, track: string) => {
+//   console.log('handleKeyNav', idx, track);
+// };
+
 const init = async () => {
   archive = Number(route.params.game);
 
@@ -595,7 +599,7 @@ const init = async () => {
     game.setArtist(artists[0]);
   } else {
     // Insert artist record into DB from random static data
-    const uniqueId = rand(1, 120);
+    const uniqueId = rand(1, 231);
     const artist = staticArtists.find((a: Artist) => a.id === uniqueId);
 
     // post game to database for future use

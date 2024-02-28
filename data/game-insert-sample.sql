@@ -1,3 +1,3 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('3NZE8jDD2cCzd4vUyZ5CQQ', 'Spacehog')
+    ('7oPgCQqMMXEXrNau5vxYZP', 'Tracy Chapman')
     ON CONFLICT (name) DO NOTHING;
