@@ -19,12 +19,6 @@
         </h3>
         <span class="block text-xs uppercase">Max Streak</span>
       </div>
-      <div class="flex-auto text-center">
-        <h3 class="mb-1 font-serif text-xl font-extrabold tracking-wide">
-          {{ state.stats.totalScore }}/{{ totalScoreOf }}
-        </h3>
-        <span class="block text-xs uppercase">Total Score</span>
-      </div>
     </div>
 
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">🎯 Distributions</h3>
@@ -45,7 +39,7 @@
           v-if="correct"
           class="bar absolute top-0 left-1 z-0 h-full rounded"
           :class="{ 'bg-green-600': correct }"
-          :style="`width: ${(correct / state.stats.playCount) * 100 + 15 >= 100 ? 100 : (correct / state.stats.playCount) * 100 + 15}%`"
+          :style="`width: ${(correct / state.stats.playCount) * 100 <= 15 ? 15 : (correct / state.stats.playCount) * 100}%`"
         >
           <span class="absolute right-2 top-0 text-xs">{{ correct }}</span>
         </span>
@@ -94,10 +88,6 @@ const state = reactive({
     totalScore: 0,
     playCount: 0,
   },
-});
-
-const totalScoreOf = computed(() => {
-  return state.stats.playCount * 5;
 });
 
 const hardReset = () => {
