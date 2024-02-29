@@ -1,8 +1,6 @@
 <template>
   <div>
-    <p class="mb-4">
-      Playing past day’s games will not count towards your gameplay stats.
-    </p>
+    <p class="mb-4">Playing past day’s games will not count towards your gameplay stats.</p>
 
     <template v-if="!artists.length">
       <p class="mb-4">The archive could not be loaded. Please try again later.</p>
