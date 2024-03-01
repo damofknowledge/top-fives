@@ -30,8 +30,11 @@
               @input="handleInput(i, game.answers[i].value)"
               class="w-full truncate rounded-none border-0 border-b-2 border-slate-50 bg-transparent p-1 px-2 text-slate-100 placeholder:text-slate-900 focus:placeholder:text-slate-300 disabled:border-slate-400 disabled:text-slate-300"
               :disabled="game.answers[i].score !== undefined || false"
-              @keyup.esc="onClickOutside()"
               placeholder="Type to search..."
+              @keyup.esc="onClickOutside()"
+              @keyup.enter="onClickOutside()"
+              @focusin="onClickOutside()"
+              @keyup.arrow-down="navToSearchResults()"
             />
             <div
               v-if="state.searchResults[i].length"
@@ -47,6 +50,8 @@
                     type="button"
                     @click="handleSelect(i, track.name)"
                     class="w-full p-1 text-left text-slate-800 hover:bg-slate-200 focus:bg-slate-200"
+                    @keyup.esc="onClickOutside()"
+                    @keyup.prevent="navBetweenItems(index, $event)"
                   >
                     {{ track.name }}
                   </button>
@@ -576,9 +581,41 @@ const handleSelect = async (idx: number, track: string) => {
   }
 };
 
-// const handleArrows = async (idx: number, track: string) => {
-//   console.log('handleKeyNav', idx, track);
-// };
+/** Down arrow key from seach automatically focuses on first search result (if available) */
+const navToSearchResults = async () => {
+  const firstItem = document.querySelector('.search-results-wrapper button') as HTMLButtonElement;
+  if (firstItem) {
+    firstItem.focus();
+  }
+};
+
+/** Arrow up/down is a focus trap within the search results */
+const navBetweenItems = async (idx: number, event: any) => {
+  let nextItem: HTMLButtonElement | null = null;
+  const numItems = document.querySelectorAll('.search-results-wrapper button').length;
+  if (event.key === 'ArrowDown') {
+    nextItem = document.querySelectorAll('.search-results-wrapper button')[
+      idx + 1
+    ] as HTMLButtonElement;
+    if (!nextItem) {
+      nextItem = document.querySelectorAll(
+        '.search-results-wrapper button'
+      )[0] as HTMLButtonElement;
+    }
+  } else if (event.key === 'ArrowUp') {
+    nextItem = document.querySelectorAll('.search-results-wrapper button')[
+      idx - 1
+    ] as HTMLButtonElement;
+    if (!nextItem) {
+      nextItem = document.querySelectorAll('.search-results-wrapper button')[
+        numItems - 1
+      ] as HTMLButtonElement;
+    }
+  }
+  if (nextItem) {
+    nextItem.focus();
+  }
+};
 
 const init = async () => {
   archive = Number(route.params.game);
