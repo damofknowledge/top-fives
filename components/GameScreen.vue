@@ -591,27 +591,24 @@ const navToSearchResults = async () => {
 
 /** Arrow up/down is a focus trap within the search results */
 const navBetweenItems = async (idx: number, event: any) => {
-  let nextItem: HTMLButtonElement | null = null;
-  const numItems = document.querySelectorAll('.search-results-wrapper button').length;
-  if (event.key === 'ArrowDown') {
-    nextItem = document.querySelectorAll('.search-results-wrapper button')[
-      idx + 1
-    ] as HTMLButtonElement;
-    if (!nextItem) {
-      nextItem = document.querySelectorAll(
-        '.search-results-wrapper button'
-      )[0] as HTMLButtonElement;
-    }
-  } else if (event.key === 'ArrowUp') {
-    nextItem = document.querySelectorAll('.search-results-wrapper button')[
-      idx - 1
-    ] as HTMLButtonElement;
-    if (!nextItem) {
-      nextItem = document.querySelectorAll('.search-results-wrapper button')[
-        numItems - 1
-      ] as HTMLButtonElement;
-    }
+  // return if not arrow up or down
+  if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') {
+    return;
   }
+
+  const numItems = document.querySelectorAll('.search-results-wrapper button').length;
+  let nextIdx = 0;
+
+  if (event.key === 'ArrowDown') {
+    nextIdx = idx + 1 >= numItems ? 0 : idx + 1;
+  } else if (event.key === 'ArrowUp') {
+    nextIdx = idx - 1 < 0 ? numItems - 1 : idx - 1;
+  }
+
+  let nextItem = document.querySelectorAll('.search-results-wrapper button')[
+    nextIdx
+  ] as HTMLButtonElement;
+
   if (nextItem) {
     nextItem.focus();
   }
