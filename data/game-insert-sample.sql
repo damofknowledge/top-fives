@@ -1,3 +1,3 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('3QgSmABpItIdj908ek80n5', 'Morphine')
+    ('1anyVhU62p31KFi8MEzkbf', 'Metro Boomin')
     ON CONFLICT (name) DO NOTHING;
