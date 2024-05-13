@@ -2,11 +2,22 @@
   <div>
     <p class="mb-4">Playing past day’s games will not count towards your gameplay stats.</p>
 
-    <template v-if="!artists.length">
+    <template v-if="!state.artists.length">
       <p class="mb-4">The archive could not be loaded. Please try again later.</p>
     </template>
+
     <template v-else>
-      <ol reversed>
+      <input
+        class="mb-4 w-full truncate rounded-none border-0 border-b-2 border-slate-50 bg-transparent p-1 px-2 text-slate-100 placeholder:text-slate-500 focus:placeholder:text-slate-300 disabled:border-slate-400 disabled:text-slate-300"
+        v-model="searchInput"
+        type="text"
+        autocomplete="off"
+        placeholder="Search"
+        @input="handleInput"
+        aria-label="Search for an artist"
+      />
+
+      <ol v-if="!searchInput.length" reversed>
         <li class="relative mb-4 pl-7">
           <span class="absolute top-1 left-0">
             <span v-if="completed(currentGame.id)">✅</span>
@@ -34,6 +45,21 @@
           </NuxtLink>
         </li>
       </ol>
+
+      <ol v-else reversed>
+        <li v-for="(artist, id) in state.artists" :key="id" class="relative mb-4 pl-7">
+          <span class="absolute top-1 left-0">
+            <span v-if="completed(artist.id)">✅</span>
+            <span v-else>⚪️</span>
+          </span>
+          <NuxtLink
+            :to="`/${artist.id}`"
+            class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+          >
+            <h4 class="text-md font-serif font-bold tracking-wide">{{ artist.name }}</h4>
+          </NuxtLink>
+        </li>
+      </ol>
     </template>
   </div>
 </template>
@@ -43,10 +69,18 @@ import type { Artist } from '@/data/types';
 
 import { subDays, format, differenceInDays } from 'date-fns';
 
+const state = reactive({
+  artists: [] as Artist[],
+});
+
 const launchDate = new Date('2022-11-24T00:00:00');
 const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
 
 const { artists, duration } = await $fetch(`/api/get-artists`);
+
+state.artists = artists;
+
+const searchInput = ref('');
 
 console.log('query: ', duration);
 
@@ -82,6 +116,22 @@ const completed = (gameIdx: number) => {
   const store = localStorage.getItem(gameIdx.toString());
   const played = !store ? false : JSON.parse(store)?.status !== 'complete' ? false : true;
   return played;
+};
+
+/**
+ * When the user enters a search query,
+ * get the three top results.
+ *
+ * If the search query is empty, return an empty
+ * array.
+ *
+ * Prevent the search from being called more than once
+ * every 100ms to lessen performance impact of server-side search.
+ */
+const handleInput = async () => {
+  const { artists } = await $fetch(`/api/get-artists-by-name?name=${searchInput.value}`);
+
+  state.artists = artists;
 };
 </script>
 
