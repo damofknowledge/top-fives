@@ -10,7 +10,7 @@
       <input
         class="mb-4 w-full truncate rounded-none border-0 border-b-2 border-slate-50 bg-transparent p-1 px-2 text-slate-100 placeholder:text-slate-500 focus:placeholder:text-slate-300 disabled:border-slate-400 disabled:text-slate-300"
         v-model="searchInput"
-        type="text"
+        type="search"
         autocomplete="off"
         placeholder="Search"
         @input="handleInput"
