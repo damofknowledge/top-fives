@@ -119,7 +119,9 @@ const completed = (gameIdx: number) => {
 };
 
 const handleInput = async () => {
-  const { artists } = await $fetch(`/api/get-artists-by-name?id=${artistIndex}&name=${searchInput.value.toLocaleLowerCase()}`);
+  const { artists } = await $fetch(
+    `/api/get-artists-by-name?id=${artistIndex}&name=${searchInput.value.toLocaleLowerCase()}`
+  );
 
   state.artists = artists || [];
 };
