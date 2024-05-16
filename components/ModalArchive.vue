@@ -2,7 +2,7 @@
   <div>
     <p class="mb-4">Playing past day’s games will not count towards your gameplay stats.</p>
 
-    <template v-if="!state.artists.length">
+    <template v-if="!searchInput.length && !state.artists.length">
       <p class="mb-4">The archive could not be loaded. Please try again later.</p>
     </template>
 
@@ -118,20 +118,10 @@ const completed = (gameIdx: number) => {
   return played;
 };
 
-/**
- * When the user enters a search query,
- * get the three top results.
- *
- * If the search query is empty, return an empty
- * array.
- *
- * Prevent the search from being called more than once
- * every 100ms to lessen performance impact of server-side search.
- */
 const handleInput = async () => {
-  const { artists } = await $fetch(`/api/get-artists-by-name?name=${searchInput.value}`);
+  const { artists } = await $fetch(`/api/get-artists-by-name?id=${artistIndex}&name=${searchInput.value.toLocaleLowerCase()}`);
 
-  state.artists = artists;
+  state.artists = artists || [];
 };
 </script>
 

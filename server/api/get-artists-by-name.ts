@@ -3,12 +3,10 @@ import { createPool } from '@vercel/postgres';
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
 
-  console.log('Query:', query);
-
   const db = createPool();
   try {
     const { rows: artists } = await db.query(
-      `SELECT * FROM artists WHERE name LIKE '%${query.name}%'`
+      `SELECT * FROM artists WHERE id <= ${query.id} AND LOWER(name) LIKE '%${query.name}%' ORDER BY name, CASE WHEN LOWER(name) = '${query.name}' THEN name END, CASE WHEN LOWER(name) LIKE '${query.name}%' THEN name END;`
     );
     return {
       artists: artists,
