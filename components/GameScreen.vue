@@ -674,7 +674,6 @@ onMounted(async () => {
   startGame();
   await getArtistAlbums();
 });
-
 </script>
 
 <style>
