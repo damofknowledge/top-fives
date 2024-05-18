@@ -43,6 +43,14 @@ const props = defineProps({
     default: '',
   },
 });
+
+const htmlTitle = computed(() => {
+  return `${game.artist?.name} Top Fives - The Spotify Guessing Game`;
+});
+
+useHead({
+  title: htmlTitle.value,
+});
 </script>
 
 <style></style>
