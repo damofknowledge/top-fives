@@ -640,6 +640,7 @@ const init = async () => {
     await $fetch('/api/post-artist', {
       method: 'post',
       body: {
+        id: artistIndex,
         artistId: artist?.artistId,
         name: `${artist?.name} ${format(Date.now(), 'MM/dd/yyyy')}`,
       },

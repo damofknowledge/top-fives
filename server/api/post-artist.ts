@@ -1,9 +1,9 @@
 import { sql } from '@vercel/postgres';
 
-async function seedArtist(artistId: string, name: string) {
+async function seedArtist(id: number, artistId: string, name: string) {
   await sql`
-          INSERT INTO artists ("artistId", name)
-          VALUES (${artistId}, ${name})
+          INSERT INTO artists (id, "artistId", name)
+          VALUES (${id}, ${artistId}, ${name})
           ON CONFLICT (name) DO NOTHING;
   `;
 }
@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
   try {
-    await seedArtist(body.artistId, body.name);
+    await seedArtist(body.id, body.artistId, body.name);
   } catch (error) {
     // @ts-ignore
     if (error?.message === `relation "artists" does not exist`) {
