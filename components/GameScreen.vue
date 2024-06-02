@@ -8,10 +8,7 @@
       Artist Popularity {{ state.artistInfo.popularity }}/100
     </p> -->
 
-    <p
-      v-if="game.answers.length && hint"
-      class="mb-2 text-sm text-slate-300"
-    >
+    <p v-if="game.answers.length && hint" class="mb-2 text-sm text-slate-300">
       {{ hint }}
     </p>
 
