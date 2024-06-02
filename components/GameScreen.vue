@@ -2,9 +2,15 @@
   <div v-if="!state.loading" class="container mx-auto px-2 text-base">
     <ArtistHeader :image="state.artistInfo.image" />
 
+    <!-- <p
+      class="mb-2 text-sm text-slate-300 underline decoration-cyan-700 decoration-dotted underline-offset-2"
+      title="Lower popularity often means a tougher game">
+      Artist Popularity {{ state.artistInfo.popularity }}/100
+    </p> -->
+
     <p
       v-if="game.answers.length && hint"
-      class="mb-2 text-sm text-slate-300 underline decoration-cyan-700 decoration-dotted underline-offset-2"
+      class="mb-2 text-sm text-slate-300"
     >
       {{ hint }}
     </p>
@@ -128,6 +134,7 @@ const state = reactive({
   loading: true,
   artistInfo: {
     image: '',
+    popularity: 0,
   },
   topTracks: [] as Array<Track>,
   topAlbums: [] as Array<any>,
@@ -161,6 +168,7 @@ const getArtistInfo = async () => {
     });
     state.artistInfo = {
       image: response.images[2].url,
+      popularity: response.popularity,
     };
   } catch (err) {
     console.error(err);
@@ -551,7 +559,7 @@ const checkAll = () => {
 };
 
 const handleInput = (idx: number, query: string) => {
-  if (query?.length < 1) {
+  if (query?.length < 1 || query === ' ') {
     state.searchResults[idx] = [];
     return;
   }
