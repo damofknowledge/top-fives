@@ -2,6 +2,7 @@
 
 export default defineNuxtConfig({
   modules: ['@vueuse/nuxt', '@pinia/nuxt', '@nuxt/test-utils/module', 'nuxt-security', 'nuxt-gtag'],
+
   security: {
     headers: {
       contentSecurityPolicy: {
@@ -10,12 +11,14 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: false,
     },
   },
+
   runtimeConfig: {
     public: {
       spotifyClientId: '69dff9d276db4fd4847f2bb5faac6eed',
     },
     spotifyClientSecret: '',
   },
+
   app: {
     head: {
       title: 'Top Fives - The Spotify Guessing Game',
@@ -36,13 +39,16 @@ export default defineNuxtConfig({
       noscript: [{ children: 'JavaScript is required to view this content' }],
     },
   },
+
   css: ['@/assets/css/tailwind.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   build: {
     transpile: [
       '@fortawesome/vue-fontawesome',
@@ -50,10 +56,13 @@ export default defineNuxtConfig({
       '@fortawesome/free-solid-svg-icons',
     ],
   },
+
   devServer: {
     https: {
       key: './local-key.pem',
       cert: './local-cert.pem',
     },
   },
+
+  compatibilityDate: '2024-07-23',
 });
