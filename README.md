@@ -56,3 +56,7 @@ yarn preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+## Notable Updates
+
+11-27-24: Spotify removed access to Preview URLs for apps in development mode

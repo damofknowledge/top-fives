@@ -1,7 +1,7 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('5DGJC3n9DS0Y9eY5ul9y0O', 'Marika Hackman')
+    ('2f9ZiYA2ic1r1voObUimdd', 'Grace Jones')
     ON CONFLICT (name) DO NOTHING;
 
-update artists set "artistId" = '5DGJC3n9DS0Y9eY5ul9y0O', name = 'Marika Hackman' where id = 681;
+update artists set "artistId" = '0KydPQPUUoTNhmiHKOg5Er', name = 'Neon Indian' where id = 854;
 
 ALTER SEQUENCE artists_id_seq RESTART WITH 719;
