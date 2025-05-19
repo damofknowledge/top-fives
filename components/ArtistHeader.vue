@@ -18,10 +18,10 @@
           target="_blank"
           class="underline decoration-cyan-600 decoration-2 underline-offset-2 hover:decoration-cyan-900"
         >
-          {{ game.artist?.name }}
+          {{ gameTitle }}
         </a>
         <span v-else>
-          {{ game.artist?.name }}
+          {{ gameTitle }}
         </span>
       </h2>
       <p class="items-left flex">
@@ -46,6 +46,10 @@ const props = defineProps({
 
 const htmlTitle = computed(() => {
   return `${game.artist?.name} Top Fives - The Spotify Guessing Game`;
+});
+
+const gameTitle = computed(() => {
+  return `#${game.artist?.id}: ${game.artist?.name}`;
 });
 
 useHead({
