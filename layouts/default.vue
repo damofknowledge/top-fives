@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen bg-slate-900 text-neutral-50">
+  <div id="app" class="min-h-screen bg-slate-900 text-neutral-50" :class="gameClass">
     <LinkSkip />
     <AppHeader />
     <main id="main-content" tabindex="-1" class="mb-1">
@@ -12,10 +12,14 @@
 <script setup lang="ts">
 // import LogRocket from 'logrocket';
 import { useWindowSize } from '@vueuse/core';
-
+import { useGameStore } from '@/stores/game';
 // LogRocket.init('gxk2oi/top-fives');
-
+const game = useGameStore();
 const { height } = useWindowSize();
+
+const gameClass = computed(() => {
+  return game.artist?.id ? `game-${game.artist?.id}` : '';
+});
 
 useHead({
   htmlAttrs: {
