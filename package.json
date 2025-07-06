@@ -22,7 +22,7 @@
     "@nuxtjs/dotenv": "^1.4.2",
     "@pinia/nuxt": "^0.5.5",
     "@pinia/testing": "^0.1.7",
-    "@tailwindcss/postcss": "^4.1.6",
+    "@tailwindcss/postcss": "^4.1.11",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
     "@typescript-eslint/parser": "^8.32.0",
     "@vitejs/plugin-vue": "^5.2.4",
