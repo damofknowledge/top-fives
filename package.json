@@ -43,7 +43,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "focus-trap": "^7.6.5",
-    "happy-dom": "^17.6.3",
+    "happy-dom": "^18.0.1",
     "husky": "^9.1.7",
     "jsdom": "^26.1.0",
     "nock": "^14.0.5",
