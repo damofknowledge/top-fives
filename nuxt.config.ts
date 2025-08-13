@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   security: {
     headers: {
       contentSecurityPolicy: {
-        'img-src': ["'self'", 'https://i.scdn.co/image/'],
+        'img-src': ["'self'", 'https://i.scdn.co/image/', 'https:', 'data:'],
+        'script-src': ["'self'", 'https://pagead2.googlesyndication.com', 'https://www.googletagmanager.com'],
       },
       crossOriginEmbedderPolicy: false,
     },
