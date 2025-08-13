@@ -67,6 +67,4 @@ export default defineNuxtConfig({
       cert: './local-cert.pem',
     },
   },
-
-  compatibilityDate: '2024-07-23',
 });
