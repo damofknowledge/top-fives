@@ -30,6 +30,10 @@ export default defineNuxtConfig({
           content:
             'Top Fives is a daily game that challenges you to guess a musical artist’s most popular songs, as told by Spotify.',
         },
+        {
+          name: 'google-adsense-account',
+          content: 'ca-pub-8379501760719061',
+        }
       ],
       htmlAttrs: {
         lang: 'en',

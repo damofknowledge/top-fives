@@ -1,6 +1,6 @@
 <template>
   <footer class="container mx-auto p-2 text-center text-md text-slate-300">
-    <!-- <p>
+    <p>
       <a
         href="https://ko-fi.com/P5P8GC2A3"
         target="_blank"
@@ -8,7 +8,7 @@
       >
         Want to pick the artist of the day? Include your pick with a donation on Ko-fi!
       </a>
-    </p> -->
+    </p>
   </footer>
 </template>
 
