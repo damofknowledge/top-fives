@@ -1,5 +1,5 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('1ThoqLcyIYvZn7iWbj8fsj', 'Bill Withers')
+    ('5os0Ltvz8Q8BvXOPOd1frx', 'Inner Circle')
     ON CONFLICT (name) DO NOTHING;
 
 update artists set "artistId" = '0KydPQPUUoTNhmiHKOg5Er', name = 'Neon Indian' where id = 854;
