@@ -38,7 +38,11 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      script: [{}],
+      script: [{
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8379501760719061',
+        async: true,
+        crossorigin: 'anonymous'
+      }],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: `/images/top-fives-logo.svg` }],
       noscript: [{ children: 'JavaScript is required to view this content' }],
     },
