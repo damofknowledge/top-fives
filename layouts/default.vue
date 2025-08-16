@@ -32,7 +32,7 @@ useHead({
   },
 });
 
-const gameTrigger = 995;
+const gameTrigger = 1000; // artist ID to trigger the background video
 const video = ref();
 const player = ref(null);
 const { onLoaded } = useScriptYouTubePlayer();
