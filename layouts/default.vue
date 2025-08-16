@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen text-neutral-50" :class="{ gameClass, 'bg-slate-900': game.artist?.id !== 995 }" @click="play()">
+  <div id="app" class="min-h-screen text-neutral-50" :class="{ gameClass, 'bg-slate-900': game.artist?.id !== gameTrigger }" @click="play()">
     <LinkSkip />
     <AppHeader />
     <main id="main-content" tabindex="-1" class="mb-1">
@@ -7,7 +7,7 @@
     </main>
     <AppFooter />
     
-    <div ref="video" class="yt-player" />
+    <div ref="video" class="yt-player" :style="{ 'display': game.artist?.id !== gameTrigger ? 'none' : 'block' }" />
   </div>
 </template>
 
@@ -96,12 +96,12 @@ main {
 
 .yt-player {
   position: absolute !important;
-    top: 0;
-    left: 0;
-    height: 200vh;
-    z-index: -1;
-    width: 200vw;
-    transform: translate3d(-50vw, -50vh, 0);
+  top: 0;
+  left: 0;
+  height: 200vh;
+  z-index: -1;
+  width: 200vw;
+  transform: translate3d(-50vw, -50vh, 0);
 }
 
 </style>
