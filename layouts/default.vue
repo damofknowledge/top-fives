@@ -35,9 +35,9 @@ useHead({
 const gameTrigger = 1000; // artist ID to trigger the background video
 const video = ref();
 const player = ref(null);
-const { onLoaded } = useScriptYouTubePlayer();
+const { onLoaded } = useScriptYouTubePlayer({});
 
-function onPlayerStateChange(event) {
+function onPlayerStateChange(event: any) {
   if (event.data === YT.PlayerState.ENDED) {
     play();
   }
@@ -95,13 +95,12 @@ main {
 }
 
 .yt-player {
+  height: 100vh;
+  left: 0;
   position: absolute !important;
   top: 0;
-  left: 0;
-  height: 200vh;
+  width: 100vw;
   z-index: -1;
-  width: 200vw;
-  transform: translate3d(-50vw, -50vh, 0);
 }
 
 </style>
