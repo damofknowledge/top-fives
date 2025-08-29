@@ -30,21 +30,11 @@ export default defineNuxtConfig({
           content:
             'Top Fives is a daily game that challenges you to guess a musical artist’s most popular songs, as told by Spotify.',
         },
-        {
-          name: 'google-adsense-account',
-          content: 'ca-pub-8379501760719061',
-        }
       ],
       htmlAttrs: {
         lang: 'en',
       },
-      script: [{
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8379501760719061',
-        async: true,
-        crossorigin: 'anonymous'
-      }],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: `/images/top-fives-logo.svg` }],
-      noscript: [{ children: 'JavaScript is required to view this content' }],
     },
   },
 
