@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       title: 'Top Fives - The Spotify Guessing Game',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'theme-color', content: '#1E293B' },
+        { name: 'theme-color', content: '#f97316' },
         {
           name: 'description',
           content:
