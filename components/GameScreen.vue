@@ -578,9 +578,12 @@ const handleInput = (idx: number, query: string) => {
 };
 
 const handleSelect = async (idx: number, track: string) => {
+  if (!game.answers[idx]) {
+    return;
+  }
   game.answers[idx].value = track;
   state.searchResults[idx] = [];
-  const bSubmit = answerSubmits.value[idx] as HTMLButtonElement;
+  const bSubmit = answerSubmits.value[idx] ? answerSubmits.value[idx] as HTMLButtonElement : undefined;
   if (bSubmit) {
     bSubmit.focus();
   }
