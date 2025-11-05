@@ -114,7 +114,7 @@ onMounted(async () => {
 
   const showInstructions = localStorage.getItem('new');
   if (showInstructions === null) {
-    // openModal('help');
+    openModal('help');
     localStorage.setItem('new', '0');
   }
 });

@@ -1,8 +1,9 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('2Q3eZMfDQgT8MhPowKFXYO', 't.A.T.u.');
+    ('0JzgaVLxpCeDg5WIm06DsU', 'KELS');
 
-update artists set "artistId" = '26AHtbjWKiwYzsoGoUZq53', name = 'Pentatonix' where id = 1126;
+update artists set "artistId" = '5TfnQ0Ai1cEbKY5katFK14', name = 'Ladyhawke' where id = 1118;
 
 ALTER SEQUENCE artists_id_seq RESTART WITH 719;
 
-3Isy6kedDrgPYoTS1dazA9 | Sean Paul                     | 1126
+ 4HLWX9kzfraiCsTvrxJEXm | The Chameleons              
+ 2c0qomdZabcCyqTZ5M9msd | The Donnas  
