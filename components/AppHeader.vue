@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-800">
+  <div class="bg-zinc-800">
     <header class="container mx-auto flex items-center py-1 px-2">
       <div class="mr-3 grow-0">
         <NuxtLink to="/">
@@ -46,7 +46,7 @@
         <span class="sr-only">Archive</span>
       </button>
     </header>
-    <div class="bg-cyan-900">
+    <div class="bg-zinc-950">
       <p class="container mx-auto px-2 text-sm font-light italic">
         <small> The Daily Spotify Popularity Guessing Game </small>
       </p>

@@ -24,7 +24,7 @@
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">🎯 Distributions</h3>
 
     <p
-      class="mb-2 text-sm text-slate-300 underline decoration-cyan-900 decoration-dotted underline-offset-2"
+      class="mb-2 text-sm text-zinc-300 underline decoration-orange-900 decoration-dotted underline-offset-2"
     >
       The number of times you correctly guessed the song and its popularity.
     </p>

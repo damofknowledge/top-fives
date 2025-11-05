@@ -26,7 +26,7 @@
       When you are satisfied with your guesses and order enter them in by clicking the
       <button
         type="button"
-        class="h-9 w-auto rounded bg-cyan-600 px-2 text-lg leading-none text-white"
+        class="h-9 w-auto rounded bg-orange-600 px-2 text-lg leading-none text-white"
         disabled
         aria-label="Submit button"
       >
@@ -74,7 +74,7 @@
       <a
         href="https://ko-fi.com/P5P8GC2A3"
         target="_blank"
-        class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+        class="underline decoration-orange-600 decoration-2 hover:decoration-orange-900"
         >If you’ve enjoyed playing please consider supporting this work and my cold brew habit on
         <strong>ko-fi</strong>.</a
       >
@@ -84,7 +84,7 @@
       Contact or feedback:
       <a
         href="mailto:topfivesfyi@gmail.com"
-        class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+        class="underline decoration-orange-600 decoration-2 hover:decoration-orange-900"
         >TopFivesFYI@gmail.com</a
       >
     </p>
@@ -93,7 +93,7 @@
       A funemployment project by
       <a
         href="https://github.com/damofknowledge"
-        class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+        class="underline decoration-orange-600 decoration-2 hover:decoration-orange-900"
       >
         @DamOfKnowledge </a
       >.

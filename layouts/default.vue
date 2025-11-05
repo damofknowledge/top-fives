@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen text-neutral-50" :class="{ gameClass, 'bg-slate-900': game.artist?.id !== gameTrigger }" @click="play()">
+  <div id="app" class="min-h-screen text-neutral-50" :class="{ gameClass, 'bg-zinc-900': game.artist?.id !== gameTrigger }" @click="play()">
     <LinkSkip />
     <AppHeader />
     <main id="main-content" tabindex="-1" class="mb-1">
@@ -25,7 +25,7 @@ const gameClass = computed(() => {
 
 useHead({
   htmlAttrs: {
-    class: 'bg-slate-900',
+    class: 'bg-zinc-900',
     style: () => {
       return `--doc-height: ${height.value}px`;
     },

@@ -2,7 +2,7 @@
   <button
     type="button"
     @click="isSupported ? share({ text: textToShare }) : copy(textToShare)"
-    class="rounded-lg bg-cyan-600 p-1 px-2 text-sm font-bold uppercase transition hover:bg-cyan-900 focus:bg-cyan-900"
+    class="rounded-lg bg-orange-600 p-1 px-2 text-sm font-bold uppercase transition hover:bg-orange-900 focus:bg-orange-900"
   >
     <span v-if="!copied">Share</span>
     <span v-else>Copied!</span>

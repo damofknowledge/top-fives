@@ -5,8 +5,8 @@
         v-if="props.image"
         :src="props.image"
         :alt="game.artist?.name"
-        width="160"
-        height="160"
+        width="130"
+        height="130"
         class="mx-auto rounded-lg"
       />
     </div>
@@ -16,7 +16,7 @@
           v-if="game.status === 'complete'"
           :href="`https://open.spotify.com/artist/${game.artist.artistId}`"
           target="_blank"
-          class="underline decoration-cyan-600 decoration-2 underline-offset-2 hover:decoration-cyan-900"
+          class="underline decoration-orange-600 decoration-2 underline-offset-2 hover:decoration-orange-900"
         >
           {{ gameTitle }}
         </a>

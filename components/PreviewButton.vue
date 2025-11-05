@@ -2,7 +2,7 @@
   <button
     type="button"
     @click="$emit('preview', index)"
-    class="h-9 w-9 rounded bg-cyan-600 text-lg text-white enabled:hover:bg-cyan-900 disabled:bg-transparent disabled:opacity-50"
+    class="h-9 w-9 rounded bg-orange-600 text-lg text-white enabled:hover:bg-orange-900 disabled:bg-transparent disabled:opacity-50"
     :disabled="!track.preview_url"
     ref="answerAudioControl"
   >

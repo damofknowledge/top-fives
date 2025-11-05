@@ -3,12 +3,12 @@
     <ArtistHeader :image="state.artistInfo.image" />
 
     <!-- <p
-      class="mb-2 text-sm text-slate-300 underline decoration-cyan-700 decoration-dotted underline-offset-2"
+      class="mb-2 text-sm text-zinc-300 underline decoration-orange-700 decoration-dotted underline-offset-2"
       title="Lower popularity often means a tougher game">
       Artist Popularity {{ state.artistInfo.popularity }}/100
     </p> -->
 
-    <p v-if="game.answers.length && hint" class="mb-2 text-sm text-slate-300">
+    <p v-if="game.answers.length && hint" class="mb-2 text-sm text-zinc-300">
       {{ hint }}
     </p>
 
@@ -31,7 +31,7 @@
               :aria-label="`Guess ${i + 1}`"
               v-model="game.answers[i].value"
               @input="handleInput(i, game.answers[i].value)"
-              class="w-full truncate rounded-none border-0 border-b-2 border-slate-50 bg-transparent p-1 px-2 text-slate-100 placeholder:text-slate-900 focus:placeholder:text-slate-300 disabled:border-slate-400 disabled:text-slate-300"
+              class="w-full truncate rounded-none border-0 border-b-2 border-zinc-50 bg-transparent p-1 px-2 text-zinc-100 placeholder:text-zinc-900 focus:placeholder:text-zinc-300 disabled:border-zinc-400 disabled:text-zinc-300"
               :disabled="game.answers[i].score !== undefined || false"
               placeholder="Type to search..."
               @keyup.esc="onClickOutside()"
@@ -41,18 +41,18 @@
             />
             <div
               v-if="state.searchResults[i].length"
-              class="search-results-wrapper absolute top-full z-10 m-0 block w-full overflow-y-scroll bg-slate-50 drop-shadow-md"
+              class="search-results-wrapper absolute top-full z-10 m-0 block w-full overflow-y-scroll bg-zinc-50 drop-shadow-md"
             >
               <ul class="search-results w-full" ref="searchResults">
                 <li
                   v-for="(track, index) in state.searchResults[i]"
                   :key="index"
-                  class="border-b border-slate-700 last:border-b-0"
+                  class="border-b border-zinc-700 last:border-b-0"
                 >
                   <button
                     type="button"
                     @click="handleSelect(i, track.name)"
-                    class="w-full p-1 text-left text-slate-800 hover:bg-slate-200 focus:bg-slate-200"
+                    class="w-full p-1 text-left text-zinc-800 hover:bg-zinc-200 focus:bg-zinc-200"
                     @keyup.esc="onClickOutside()"
                     @keyup.prevent="navBetweenItems(index, $event)"
                   >
@@ -73,7 +73,7 @@
         <p v-if="game.answers[i].error" class="pt-1 leading-4 text-rose-500">
           <small>{{ game.answers[i].error }}</small>
         </p>
-        <p class="pt-2 leading-4 text-sm text-slate-300">
+        <p class="pt-2 leading-4 text-sm text-zinc-300">
           <span v-if="game.status === 'complete'">
             {{ state.topTracks[i].name }} —
             <span class="italic">{{ state.topTracks[i].album }}</span>
@@ -164,7 +164,7 @@ const getArtistInfo = async () => {
       },
     });
     state.artistInfo = {
-      image: response.images[2].url,
+      image: response.images[0].url,
       popularity: response.popularity,
     };
   } catch (err) {

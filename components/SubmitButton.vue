@@ -2,7 +2,7 @@
   <button
     type="button"
     @click="$emit('checkAll')"
-    class="h-9 w-full rounded bg-cyan-600 text-lg leading-none text-white enabled:hover:bg-cyan-900 disabled:bg-transparent disabled:opacity-50"
+    class="h-9 w-full rounded bg-orange-600 text-lg leading-none text-white enabled:hover:bg-orange-900 disabled:bg-transparent disabled:opacity-50"
     :disabled="game.status === 'complete'"
   >
     <font-awesome-icon

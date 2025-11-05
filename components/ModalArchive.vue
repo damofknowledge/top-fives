@@ -8,7 +8,7 @@
 
     <template v-else>
       <input
-        class="mb-4 w-full truncate rounded-none border-0 border-b-2 border-slate-50 bg-transparent p-1 px-2 text-slate-100 placeholder:text-slate-500 focus:placeholder:text-slate-300 disabled:border-slate-400 disabled:text-slate-300"
+        class="mb-4 w-full truncate rounded-none border-0 border-b-2 border-zinc-50 bg-transparent p-1 px-2 text-zinc-100 placeholder:text-zinc-500 focus:placeholder:text-zinc-300 disabled:border-zinc-400 disabled:text-zinc-300"
         v-model="searchInput"
         type="search"
         autocomplete="off"
@@ -25,7 +25,7 @@
           </span>
           <NuxtLink
             to="/"
-            class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+            class="underline decoration-orange-600 decoration-2 hover:decoration-orange-900"
           >
             <small>{{ currentGame.date }}</small>
             <h4 class="text-md font-serif font-bold tracking-wide">{{ currentGame.name }}</h4>
@@ -38,7 +38,7 @@
           </span>
           <NuxtLink
             :to="`/${artist.id}`"
-            class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+            class="underline decoration-orange-600 decoration-2 hover:decoration-orange-900"
           >
             <small>{{ artist.date }}</small>
             <h4 class="text-md font-serif font-bold tracking-wide">{{ artist.name }}</h4>
@@ -54,7 +54,7 @@
           </span>
           <NuxtLink
             :to="`/${artist.id}`"
-            class="underline decoration-cyan-600 decoration-2 hover:decoration-cyan-900"
+            class="underline decoration-orange-600 decoration-2 hover:decoration-orange-900"
           >
             <h4 class="text-md font-serif font-bold tracking-wide">{{ artist.name }}</h4>
           </NuxtLink>
