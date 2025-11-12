@@ -1,5 +1,8 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('1LFKKuzn302wp15dYH28id', 'Tammy Wynette');
+    ('4d3yvTptO48nOYTPBcPFZC', 'Eve'),
+    ('7EGwUS3c5dXduO4sMyLWC5', 'Houndmouth'),
+    ('4njlfhIxklOkrds9Y9o5ZZ', 'Mitch Hedberg'),
+    ('5QPNEMldc8k1g5hT54PCWg', 'The Von Bondies');
 
 update artists set "artistId" = '23rleGXVOVVgTk3xgtmfE4', name = 'Gordon Lightfoot' where id = 1082;
 

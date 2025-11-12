@@ -11,6 +11,7 @@
       />
     </div>
     <div class="pl-4 text-left">
+      <span class="text-sm italic text-zinc-400">{{ gameDate }}</span>
       <h2 class="mb-2 text-lg tracking-wide">
         <a
           v-if="game.status === 'complete'"
@@ -34,6 +35,7 @@
 
 <script setup lang="ts">
 import { useGameStore } from '@/stores/game';
+import { subDays, format, differenceInDays, addDays } from 'date-fns';
 
 const game = useGameStore();
 
@@ -45,7 +47,12 @@ const props = defineProps({
 });
 
 const htmlTitle = computed(() => {
-  return `${game.artist?.name} Top Fives - The Spotify Guessing Game`;
+  return `${game.artist?.name} on Top Fives - The Spotify Guessing Game`;
+});
+
+const launchDate = new Date('2022-11-24T00:00:00');
+const gameDate = computed(() => {
+  return format(addDays(launchDate, game.artist?.id), 'MMMM do, yyyy');
 });
 
 const gameTitle = computed(() => {

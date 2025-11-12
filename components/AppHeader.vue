@@ -16,6 +16,14 @@
         <h1 class="font-serif text-xl font-extrabold tracking-wide">Top Fives</h1>
       </div>
 
+      <a href="https://ko-fi.com/P5P8GC2A3"
+         target="_blank"
+         data-testid="donate-button"
+         class="flex justify-center items-center h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75">
+        <font-awesome-icon :icon="icons.donate" class="h-5 w-5" />
+        <span class="sr-only">Support</span>
+    </a>
+
       <button
         type="button"
         data-testid="help-button"
@@ -45,6 +53,16 @@
         <font-awesome-icon :icon="icons.archive" class="h-5 w-5" />
         <span class="sr-only">Archive</span>
       </button>
+
+      <button
+        type="button"
+        data-testid="random-button"
+        @click="goToRandomArtist()"
+        class="h-9 w-9 rounded text-xl text-orange-600 hover:opacity-75 focus:opacity-75"
+      >
+        <font-awesome-icon :icon="icons.random" class="h-5 w-5" />
+        <span class="sr-only">Random Artist</span>
+      </button>
     </header>
     <div class="bg-zinc-950">
       <p class="container mx-auto px-2 text-sm font-light italic">
@@ -70,7 +88,8 @@
 </template>
 
 <script setup lang="ts">
-import { faCircleQuestion, faChartBar, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import { faCircleQuestion, faChartBar, faCalendarDays, faDonate, faRandom } from '@fortawesome/free-solid-svg-icons';
+import { differenceInDays } from 'date-fns';
 
 const route = useRoute();
 
@@ -83,6 +102,8 @@ const icons = {
   help: faCircleQuestion,
   stats: faChartBar,
   archive: faCalendarDays,
+  donate: faDonate,
+  random: faRandom,
 };
 
 const openModal = (name: string = '') => {
@@ -98,6 +119,14 @@ watch(
   () => route.params.game,
   () => closeModal()
 );
+
+const launchDate = new Date('2022-11-24T00:00:00');
+const artistIndex = differenceInDays(Date.now(), launchDate) || 1;
+
+const goToRandomArtist = () => {
+  const randomIndex = Math.floor(Math.random() * artistIndex);
+  navigateTo(`/${randomIndex}`);
+};
 
 onMounted(async () => {
   const gameVersion = localStorage.getItem('t5');

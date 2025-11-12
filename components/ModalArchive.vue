@@ -12,7 +12,7 @@
         v-model="searchInput"
         type="search"
         autocomplete="off"
-        placeholder="Search"
+        placeholder="Search for an artist…"
         @input="handleInput"
         aria-label="Search for an artist"
       />
