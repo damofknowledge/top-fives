@@ -3641,50 +3641,50 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/coverage-v8@npm:4.0.13"
+"@vitest/coverage-v8@npm:^4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/coverage-v8@npm:4.0.14"
   dependencies:
     "@bcoe/v8-coverage": ^1.0.2
-    "@vitest/utils": 4.0.13
+    "@vitest/utils": 4.0.14
     ast-v8-to-istanbul: ^0.3.8
-    debug: ^4.4.3
     istanbul-lib-coverage: ^3.2.2
     istanbul-lib-report: ^3.0.1
     istanbul-lib-source-maps: ^5.0.6
     istanbul-reports: ^3.2.0
     magicast: ^0.5.1
+    obug: ^2.1.1
     std-env: ^3.10.0
     tinyrainbow: ^3.0.3
   peerDependencies:
-    "@vitest/browser": 4.0.13
-    vitest: 4.0.13
+    "@vitest/browser": 4.0.14
+    vitest: 4.0.14
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 3ab793ef7e0da000188d202c6660f4ef154946be0b8c24b348454c940d5eb8b26c1b6930309e285741ab0bb2136fa1fec1c2553b3c6ccbf2a9fbba18f96fc19c
+  checksum: 994925503533f87ec7af03df78d26cc309071b808a735738aac88b018085ad93e80ff16136ef774e612c74d83a6030d7228531af7055b2b0dcadf2c62de73ebf
   languageName: node
   linkType: hard
 
-"@vitest/expect@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/expect@npm:4.0.13"
+"@vitest/expect@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/expect@npm:4.0.14"
   dependencies:
     "@standard-schema/spec": ^1.0.0
     "@types/chai": ^5.2.2
-    "@vitest/spy": 4.0.13
-    "@vitest/utils": 4.0.13
+    "@vitest/spy": 4.0.14
+    "@vitest/utils": 4.0.14
     chai: ^6.2.1
     tinyrainbow: ^3.0.3
-  checksum: cb3df21d6d086b0858745795668aaefd2c10dac363066dce8b11043e5ef1d70fc763a96e715dbcec4089f73dc608da38729a9508e7be3fe2bdaa5d85d57e7fe5
+  checksum: 9810bb6ad6f4eabda6bee132a5b1d8d527e89845bf2bf0cf0fedfd20fece0ac5d46286c5fa7e6414f7eca77658cad0e91dc80bd83fbee7bc1ec7372e4ab6fad9
   languageName: node
   linkType: hard
 
-"@vitest/mocker@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/mocker@npm:4.0.13"
+"@vitest/mocker@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/mocker@npm:4.0.14"
   dependencies:
-    "@vitest/spy": 4.0.13
+    "@vitest/spy": 4.0.14
     estree-walker: ^3.0.3
     magic-string: ^0.30.21
   peerDependencies:
@@ -3695,54 +3695,54 @@ __metadata:
       optional: true
     vite:
       optional: true
-  checksum: a7ee1a6b7693b8bcdfddf2c0337da8650e925e4668640dbdded23ed6a0dcafecda883c573f3d3bbde7d5fcd7fa363f3e8b9310046adbba0e67acf0c43c3901e9
+  checksum: a73082a70ebd14e4667db051ed3cc808feddb2035e06f1c107f242da66a4975f46ddc481611513afd1cd9332a2d514100e8a32418445e3e49bf4328dba0ce26a
   languageName: node
   linkType: hard
 
-"@vitest/pretty-format@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/pretty-format@npm:4.0.13"
+"@vitest/pretty-format@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/pretty-format@npm:4.0.14"
   dependencies:
     tinyrainbow: ^3.0.3
-  checksum: abf83bb2a14bf5343aada91f9bebef0a881d1b7cbf30e9a5be1d11c50eeaf7c63d444d06b7a0a54f1cf071cf66f2104ef7463793ac2a30ae838e8382637ec111
+  checksum: 07febc84f89126274ec3b7be3d640131771547d231063c4595edb6357726f52fc23f85e8e8bc183a8327451030f21f9a3d293eb4efa1a2f136e1792a6d820843
   languageName: node
   linkType: hard
 
-"@vitest/runner@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/runner@npm:4.0.13"
+"@vitest/runner@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/runner@npm:4.0.14"
   dependencies:
-    "@vitest/utils": 4.0.13
+    "@vitest/utils": 4.0.14
     pathe: ^2.0.3
-  checksum: 61c2b0d878cba6b19b2691b2e92e428e516483f029fef53fc13bd3d2a4901ec595dc3474d0aef74a5a0b5ab7e05b29508119324262ec962f55848051637c97c1
+  checksum: f82dedc3d98cfb8b90601e0b3fca958dc97a9b9b73e83eaa63afd02e4570296e69d428daca7a69d7e4fc0e6cdb8f835fc46744a287a29c1c0f6805ca49818621
   languageName: node
   linkType: hard
 
-"@vitest/snapshot@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/snapshot@npm:4.0.13"
+"@vitest/snapshot@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/snapshot@npm:4.0.14"
   dependencies:
-    "@vitest/pretty-format": 4.0.13
+    "@vitest/pretty-format": 4.0.14
     magic-string: ^0.30.21
     pathe: ^2.0.3
-  checksum: 9567875c9548889646a96d62d7097188beae3886165fc70f8b4fadbc4f9763694dc90b4b9accecb135d7b57ace6a392bafd286ef847ed37cf59376aad4f84c05
+  checksum: d0a079c47a6a23c6f9d53fdb74b56e13d41bcd1087e9575432634152337ceb3a2797767c4a4facf115c7534cd693bc684414ebeef2af55d12e9b8b81d77e214e
   languageName: node
   linkType: hard
 
-"@vitest/spy@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/spy@npm:4.0.13"
-  checksum: 9888f131734ffd05ddbf2f949ee57f81183a01ff3856af30940dae3fb2d8ce49dcfda804857a6f878cc839f3d663ef09fa596ea33362ff1ba2633d5a380fe6a7
+"@vitest/spy@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/spy@npm:4.0.14"
+  checksum: 6dee2b2eb918c6292823b9c59277840c3158cd382ba5273b9158ec2f1030272a695798d8880b0f5bcd5ffadde039fd7718ad8c6f339142a944d00835cb59a01e
   languageName: node
   linkType: hard
 
-"@vitest/utils@npm:4.0.13":
-  version: 4.0.13
-  resolution: "@vitest/utils@npm:4.0.13"
+"@vitest/utils@npm:4.0.14":
+  version: 4.0.14
+  resolution: "@vitest/utils@npm:4.0.14"
   dependencies:
-    "@vitest/pretty-format": 4.0.13
+    "@vitest/pretty-format": 4.0.14
     tinyrainbow: ^3.0.3
-  checksum: a3200e7a6fed4b49bd122e2dff29a3227c80daa8e1aa66c32663370ec9c759e0b3c4feaa11b5646cad04325cd7a0e9ba6dc171676d94efe6e42fba2472231e14
+  checksum: 61048d5f9c1555bda343f1c3d04fc51b622dbebd2c690720e0c97d54d7ccf9f94cf9a89baac45b2b9c2d02e1502caee52e7101ce0b60a31798e732abb273ff2f
   languageName: node
   linkType: hard
 
@@ -4321,28 +4321,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/components@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/components@npm:14.0.0"
+"@vueuse/components@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/components@npm:14.1.0"
   dependencies:
-    "@vueuse/core": 14.0.0
-    "@vueuse/shared": 14.0.0
+    "@vueuse/core": 14.1.0
+    "@vueuse/shared": 14.1.0
   peerDependencies:
     vue: ^3.5.0
-  checksum: e7987e643409e1950bdea633de986813924be062171a4e103bd06a835fa7b4f3fd2f3e9c6bb4765054f46dd90bbdd3a52b6aaaba1b81fda452f6ff361860754a
+  checksum: c8c84820c8f561d051f06c417439c2f64a109823eca6dc9f1d678cb3fb2b1441a6ff66732eaa6f98d9ef6ca38501c8f79db67e89bd34219a95a418523220a4ca
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:14.0.0, @vueuse/core@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/core@npm:14.0.0"
+"@vueuse/core@npm:14.1.0, @vueuse/core@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/core@npm:14.1.0"
   dependencies:
     "@types/web-bluetooth": ^0.0.21
-    "@vueuse/metadata": 14.0.0
-    "@vueuse/shared": 14.0.0
+    "@vueuse/metadata": 14.1.0
+    "@vueuse/shared": 14.1.0
   peerDependencies:
     vue: ^3.5.0
-  checksum: 46c5c2bed6eb5e2149dca9a5c9b0e81c7e8d1875dd64a7e8918c56cb24740797fd23b45b242c54b8c8a1ae46dbb245e4ea8b348ce43aa55207544c53556c3972
+  checksum: 2cd4c407e6ec99b09025fb64592b4c8f23ac0bb063f6ddf24565ef943171bba6dfab4f377e3120a26a43b636e679871fcfa53ca20343a84d7c92d8758a9986ff
   languageName: node
   linkType: hard
 
@@ -4359,12 +4359,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/integrations@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/integrations@npm:14.0.0"
+"@vueuse/integrations@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/integrations@npm:14.1.0"
   dependencies:
-    "@vueuse/core": 14.0.0
-    "@vueuse/shared": 14.0.0
+    "@vueuse/core": 14.1.0
+    "@vueuse/shared": 14.1.0
   peerDependencies:
     async-validator: ^4
     axios: ^1
@@ -4404,7 +4404,7 @@ __metadata:
       optional: true
     universal-cookie:
       optional: true
-  checksum: 76b871fc9f58eb5962cca03b4d32e2b70da948a97b936d4017b02129d47242a32bd0f4d8c70739ac3ddc2ea0c41e90bb68e8a31b4cc15bc1d3c6d2dfab0ee7a7
+  checksum: 68e714f67b54b0519caaed98c6251ab5a5a2199a1ce95b42e468a31b4d02607bdc46fc7cc0a774121dab9f53d6497e72ee7b15acbda5b4fb2eb7d852fdbe3b94
   languageName: node
   linkType: hard
 
@@ -4415,37 +4415,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/metadata@npm:14.0.0"
-  checksum: fe4b58d6bb03c562d78b004d3f12824f4f7cdbea277444555d28db3cb5b5a8c0f697f82cf1ba81394e451e0e729f94ce8d9c541178ac7cff8c4a4545ba2c23b3
+"@vueuse/metadata@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/metadata@npm:14.1.0"
+  checksum: 2b68310bc5a7e72f1d94985d1ea3448c075c249bf504b2588b8ee160a4e7368b0216e55e3105129566f78e66dcf45f2141a459a14f79fd28e1bb3090040f999f
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/nuxt@npm:14.0.0"
+"@vueuse/nuxt@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/nuxt@npm:14.1.0"
   dependencies:
     "@nuxt/kit": ^4.1.3
-    "@vueuse/core": 14.0.0
-    "@vueuse/metadata": 14.0.0
+    "@vueuse/core": 14.1.0
+    "@vueuse/metadata": 14.1.0
     local-pkg: ^1.1.2
   peerDependencies:
     nuxt: ^3.0.0 || ^4.0.0-0
     vue: ^3.5.0
-  checksum: 705737fb691e54a3c2d0f63afc2471115c388d1a328a52256876519746b1cdc2b1fcf9ac58f5dd197aa68de309497ea45d3bbc13971ceb0cfce484aeb86f1d4f
+  checksum: fe671032f1a83fe7f7e3d2e95fe9d900207fcc45e46667ab935e4dc3dce3fe6c6a729c5953c55404fbb5198e8aa4f21306200941e5d6ee57ffb3e59471402879
   languageName: node
   linkType: hard
 
-"@vueuse/router@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/router@npm:14.0.0"
+"@vueuse/router@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/router@npm:14.1.0"
   dependencies:
-    "@vueuse/shared": 14.0.0
+    "@vueuse/shared": 14.1.0
   peerDependencies:
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: b1fc1e3aa1a80a6306797340b0b00e02acc23543a1590a13c376f949396f9a3928d3fcbf253bef60b4f8488952bdc269ceb9a967c5575dd222f61858ca5f5590
+  checksum: d113e418debca784a22621f868a4d2f694c4b5759d6d4f7458e084cd4142d5e4b7a7326e3c202d7ef85e75db1711f830ddc3bdf8768cd1d4463b81602d7ce3dc
   languageName: node
   linkType: hard
 
@@ -4458,12 +4458,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:14.0.0":
-  version: 14.0.0
-  resolution: "@vueuse/shared@npm:14.0.0"
+"@vueuse/shared@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/shared@npm:14.1.0"
   peerDependencies:
     vue: ^3.5.0
-  checksum: d72b80e81fbf7b5e2a7ef09b9d28fa968e2be5227ee780a9bccfcbb9c0df7a38b60b783d70569456fdba688112d924152f7542feae966e9f3522be31e0ab66aa
+  checksum: e9bac5fb15a20ed6b4f92692932e7b8c7836388db7d8b3cac12477c15f2dc73862ddaf0ee4c6fe079e13b042432268682c299003268447b5a50af7744196e850
   languageName: node
   linkType: hard
 
@@ -7149,14 +7149,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^20.0.10":
-  version: 20.0.10
-  resolution: "happy-dom@npm:20.0.10"
+"happy-dom@npm:^20.0.11":
+  version: 20.0.11
+  resolution: "happy-dom@npm:20.0.11"
   dependencies:
     "@types/node": ^20.0.0
     "@types/whatwg-mimetype": ^3.0.2
     whatwg-mimetype: ^3.0.0
-  checksum: 5403dafcc0e4b93705ae10d8ffa1c9d1d9a07d5a3cad1a942fa287f482148d6ffdadc971ddd31ca2bfbaef6cf12a47f31a0f42e52f135355f44139c36a5de129
+  checksum: 51bc52ce2808a290bcd7a169d321169c514a00247cbc0f19ccc9211366d03c26979cdb463fe1eaefc037c1580655b4cb91ccb8ca637f7d78d17822210d376365
   languageName: node
   linkType: hard
 
@@ -9082,6 +9082,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"obug@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "obug@npm:2.1.1"
+  checksum: 73e54095e977bc85611351a78d31061cf1eccd7173562e7b72afad63dcb924709a6fc5d6f43868edea424b1038e0f45edad1bf07ec37a559c96b81c89b663a71
+  languageName: node
+  linkType: hard
+
 "ofetch@npm:^1.4.1":
   version: 1.4.1
   resolution: "ofetch@npm:1.4.1"
@@ -10138,12 +10145,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.5.3, prettier@npm:^3.6.2":
+"prettier@npm:^3.5.3":
   version: 3.6.2
   resolution: "prettier@npm:3.6.2"
   bin:
     prettier: bin/prettier.cjs
   checksum: 0206f5f437892e8858f298af8850bf9d0ef1c22e21107a213ba56bfb9c2387a2020bfda244a20161d8e3dad40c6b04101609a55d370dece53d0a31893b64f861
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.7.3":
+  version: 3.7.3
+  resolution: "prettier@npm:3.7.3"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: fc3da17f1394f7e634eee762b1a42e0324cc6d78f8f966c746aed82c2712d24451db919e9dfa381b6fb4684b9cb04e25cfd08f47c55da92a814f9fa1e2427433
   languageName: node
   linkType: hard
 
@@ -11451,13 +11467,13 @@ __metadata:
     "@unhead/vue": ^2.0.19
     "@vercel/postgres": ^0.10.0
     "@vitejs/plugin-vue": ^6.0.2
-    "@vitest/coverage-v8": ^4.0.13
+    "@vitest/coverage-v8": ^4.0.14
     "@vue/test-utils": ^2.4.6
-    "@vueuse/components": ^14.0.0
-    "@vueuse/core": ^14.0.0
-    "@vueuse/integrations": ^14.0.0
-    "@vueuse/nuxt": ^14.0.0
-    "@vueuse/router": ^14.0.0
+    "@vueuse/components": ^14.1.0
+    "@vueuse/core": ^14.1.0
+    "@vueuse/integrations": ^14.1.0
+    "@vueuse/nuxt": ^14.1.0
+    "@vueuse/router": ^14.1.0
     autoprefixer: ^10.4.22
     axios: ^1.13.2
     buffer: ^6.0.3
@@ -11469,7 +11485,7 @@ __metadata:
     eslint-plugin-vitest: ^0.5.4
     eslint-plugin-vuejs-accessibility: ^2.4.1
     focus-trap: ^7.6.6
-    happy-dom: ^20.0.10
+    happy-dom: ^20.0.11
     husky: ^9.1.7
     jsdom: ^27.2.0
     nock: ^14.0.10
@@ -11479,12 +11495,12 @@ __metadata:
     nuxt-security: ^2.5.0
     pinia: ^3.0.4
     postcss: ^8.5.6
-    prettier: ^3.6.2
+    prettier: ^3.7.3
     prettier-eslint: ^16.4.2
     prettier-plugin-tailwindcss: ^0.7.1
     string-similarity-js: ^2.1.4
     tailwindcss: ^4.1.17
-    vitest: 4.0.13
+    vitest: 4.0.14
     vitest-environment-nuxt: ^1.0.1
   languageName: unknown
   linkType: soft
@@ -12323,21 +12339,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:4.0.13":
-  version: 4.0.13
-  resolution: "vitest@npm:4.0.13"
+"vitest@npm:4.0.14":
+  version: 4.0.14
+  resolution: "vitest@npm:4.0.14"
   dependencies:
-    "@vitest/expect": 4.0.13
-    "@vitest/mocker": 4.0.13
-    "@vitest/pretty-format": 4.0.13
-    "@vitest/runner": 4.0.13
-    "@vitest/snapshot": 4.0.13
-    "@vitest/spy": 4.0.13
-    "@vitest/utils": 4.0.13
-    debug: ^4.4.3
+    "@vitest/expect": 4.0.14
+    "@vitest/mocker": 4.0.14
+    "@vitest/pretty-format": 4.0.14
+    "@vitest/runner": 4.0.14
+    "@vitest/snapshot": 4.0.14
+    "@vitest/spy": 4.0.14
+    "@vitest/utils": 4.0.14
     es-module-lexer: ^1.7.0
     expect-type: ^1.2.2
     magic-string: ^0.30.21
+    obug: ^2.1.1
     pathe: ^2.0.3
     picomatch: ^4.0.3
     std-env: ^3.10.0
@@ -12350,20 +12366,17 @@ __metadata:
   peerDependencies:
     "@edge-runtime/vm": "*"
     "@opentelemetry/api": ^1.9.0
-    "@types/debug": ^4.1.12
     "@types/node": ^20.0.0 || ^22.0.0 || >=24.0.0
-    "@vitest/browser-playwright": 4.0.13
-    "@vitest/browser-preview": 4.0.13
-    "@vitest/browser-webdriverio": 4.0.13
-    "@vitest/ui": 4.0.13
+    "@vitest/browser-playwright": 4.0.14
+    "@vitest/browser-preview": 4.0.14
+    "@vitest/browser-webdriverio": 4.0.14
+    "@vitest/ui": 4.0.14
     happy-dom: "*"
     jsdom: "*"
   peerDependenciesMeta:
     "@edge-runtime/vm":
       optional: true
     "@opentelemetry/api":
-      optional: true
-    "@types/debug":
       optional: true
     "@types/node":
       optional: true
@@ -12381,7 +12394,7 @@ __metadata:
       optional: true
   bin:
     vitest: vitest.mjs
-  checksum: 9c63f891f3db770408134b985f9eccc69aa2a63a95ca28310ddbaba503063eb6e3c95bc89d0d0b4ff55b88f0101663ffd9ab52170137d3184b3dd7f7f4342324
+  checksum: fda284da4cfda57e7bcfd35b5ac4b9088ff3412790cbd3de8c82d6cf4927c98d4c4f31ee11ebe49bed68231df75c98150b64425195354a4f4a467cdd499e5bc4
   languageName: node
   linkType: hard
 

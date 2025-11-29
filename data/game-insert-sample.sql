@@ -1,8 +1,9 @@
 INSERT INTO artists ("artistId", name) VALUES
-    ('4d3yvTptO48nOYTPBcPFZC', 'Eve'),
-    ('7EGwUS3c5dXduO4sMyLWC5', 'Houndmouth'),
-    ('4njlfhIxklOkrds9Y9o5ZZ', 'Mitch Hedberg'),
-    ('5QPNEMldc8k1g5hT54PCWg', 'The Von Bondies');
+    ('7CCn4PFRRRZF127jtCBAUe', 'The Lovin’ Spoonful'),
+    ('1WHoAjAWGx5qLsgzpaOk7W', 'Hercules & Love Affair'),
+    ('74fkl73HDlCXw0l6cemB89', 'G. Love & Special Sauce'),
+    ('7mu52yh5bBhhJOyVndAEZW', 'Cleopatra'),
+    ('6bWxFw65IEJzBYjx3SxUXd', 'Morcheeba');
 
 update artists set "artistId" = '23rleGXVOVVgTk3xgtmfE4', name = 'Gordon Lightfoot' where id = 1082;
 
