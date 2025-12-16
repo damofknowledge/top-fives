@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { useGameStore } from '@/stores/game';
-import { subDays, format, differenceInDays, addDays } from 'date-fns';
+import { format, addDays } from 'date-fns';
 
 const game = useGameStore();
 

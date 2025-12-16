@@ -58,7 +58,7 @@
         type="button"
         data-testid="random-button"
         @click="goToRandomArtist()"
-        class="h-9 w-9 rounded text-xl text-orange-600 hover:opacity-75 focus:opacity-75"
+        class="h-9 w-9 rounded text-xl text-white hover:opacity-75 focus:opacity-75"
       >
         <font-awesome-icon :icon="icons.random" class="h-5 w-5" />
         <span class="sr-only">Random Artist</span>

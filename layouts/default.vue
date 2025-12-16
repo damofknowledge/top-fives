@@ -5,7 +5,6 @@
     <main id="main-content" tabindex="-1" class="mb-1">
       <NuxtPage />
     </main>
-    <AppFooter />
     
     <div ref="video" class="yt-player" :style="{ 'display': game.artist?.id !== gameTrigger ? 'none' : 'block' }" />
   </div>

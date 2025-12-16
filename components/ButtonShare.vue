@@ -33,7 +33,7 @@ const generateEmojiGrid = () => {
         scoreText += '🟨';
         break;
       default:
-        scoreText += '⬜️';
+        scoreText += '⬛️';
         break;
     }
     scoreText += '\n';
