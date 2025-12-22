@@ -475,6 +475,9 @@ const similarityChecker = (input: string, answer: string) => {
 };
 
 const check = (idx: number) => {
+  if (!answerInputs.value[idx]) {
+    return;
+  }
   const input = answerInputs.value[idx] as HTMLInputElement;
   const guess = input.value.toLocaleLowerCase();
   const answers = state.topTracks.map((t) => t.name.toLocaleLowerCase());
@@ -484,8 +487,14 @@ const check = (idx: number) => {
     : answers.map((t) => makeSimilar(t));
 
   // Get similarity ratio
+  if (!answers[idx]) {
+    return;
+  }
   const similarity = similarityChecker(guess.toLocaleLowerCase(), answers[idx]);
 
+  if (!game.answers[idx]) {
+    return;
+  }
   // If an answer is correct, then don't allow it to be used for another guess
   if (state.locked.includes(guess) && game.answers[idx].score === undefined) {
     game.answers[idx].error = 'This song has already been correctly guessed, please try another.';
@@ -495,6 +504,9 @@ const check = (idx: number) => {
   // Reset error
   game.answers[idx].error = '';
 
+  if (!state.topTracks[idx]) {
+    return;
+  }
   // If guess equals answer or guess is sufficiently similar to answer
   if (guess === answers[idx] || similarity >= 0.7) {
     if (guess !== answers[idx]) {
@@ -538,6 +550,9 @@ const check = (idx: number) => {
 
 const songPreview = (idx: number) => {
   answerAudioControls.value.forEach((_, index) => {
+    if (!answerAudioControls.value[index]) {
+      return;
+    }
     let control = answerAudioControls.value[index] as typeof PreviewButton;
     if (index === idx) {
       control.play();
@@ -707,7 +722,7 @@ ol {
 }
 
 .answer.fail .input-container::before {
-  content: '⬜️ ' counter(list-counter) '.';
+  content: '⬛️ ' counter(list-counter) '.';
 }
 
 .search-results-wrapper {
