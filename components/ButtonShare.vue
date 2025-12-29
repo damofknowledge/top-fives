@@ -14,6 +14,7 @@ import { useClipboard, useShare } from '@vueuse/core';
 
 import { useGameStore } from '@/stores/game';
 
+const route = useRoute();
 const game = useGameStore();
 
 const emojiNumbers = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣'];
@@ -45,7 +46,7 @@ const textToShare = computed(() => {
   return (
     `Top Fives #${game.artist?.id} ${game.artist.name} ${game.score}/${game.answers.length}\n\n` +
     `${generateEmojiGrid()}\n` +
-    `https://topfives.fyi`
+    `https://topfives.fyi/${route.params.game ? route.params.game : ''}`
   );
 });
 </script>
