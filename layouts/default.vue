@@ -8,12 +8,15 @@
     
     <div ref="video" class="yt-player" :style="{ 'display': game.artist?.id !== gameTrigger ? 'none' : 'block' }" />
   </div>
+  <SpeedInsights />
 </template>
 
 <script setup lang="ts">
 // import LogRocket from 'logrocket';
 import { useWindowSize } from '@vueuse/core';
 import { useGameStore } from '@/stores/game';
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
+
 // LogRocket.init('gxk2oi/top-fives');
 const game = useGameStore();
 const { height } = useWindowSize();
