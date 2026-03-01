@@ -2,12 +2,6 @@
   <div v-if="!state.loading" class="container mx-auto px-2 text-base">
     <ArtistHeader :image="state.artistInfo.image" />
 
-    <!-- <p
-      class="mb-2 text-sm text-zinc-300 underline decoration-orange-700 decoration-dotted underline-offset-2"
-      title="Lower popularity often means a tougher game">
-      Artist Popularity {{ state.artistInfo.popularity }}/100
-    </p> -->
-
     <p v-if="game.answers.length && hint" class="mb-2 text-sm text-zinc-300">
       {{ hint }}
     </p>

@@ -66,7 +66,7 @@
     </header>
     <div class="bg-zinc-950">
       <p class="container mx-auto px-2 text-sm font-light italic">
-        <small> The Daily Spotify Popularity Guessing Game </small>
+        <small> The Daily <span class="line-through">Spotify</span> Popularity Guessing Game </small>
       </p>
     </div>
     <ModalPopup v-if="state.modalName === 'help' && state.modalIsOpen" @close-modal="closeModal()">
@@ -141,8 +141,8 @@ onMounted(async () => {
     localStorage.setItem('t5', '3');
   }
 
-  const showInstructions = localStorage.getItem('new');
-  if (showInstructions === null) {
+  const showInstructions = new Date() >= new Date('2026-03-09') || localStorage.getItem('new');
+  if (showInstructions || showInstructions === null) {
     openModal('help');
     localStorage.setItem('new', '0');
   }

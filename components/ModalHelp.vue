@@ -2,7 +2,11 @@
   <div class="leading-6">
     <h3 class="text-md mb-4 font-serif font-extrabold tracking-wide">What is This?</h3>
 
-    <p class="mb-4 italic">Updated: 2024-02-19</p>
+    <p class="mb-4 italic">Updated: 2026-03-09</p>
+
+    <p class="mb-4">
+      Due to Spotify’s changes to their API, Top Fives is no longer playable. The game will remain up for archival purposes, but there will be no new games or updates. Thanks to everyone who played and supported the game over the years!
+    </p>
 
     <p class="mb-4">
       Top Fives is a daily game that challenges you to guess a musical artist’s most popular songs,

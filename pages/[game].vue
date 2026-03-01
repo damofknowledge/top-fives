@@ -1,5 +1,7 @@
 <template>
-  <GameScreen />
+  <Index />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Index from './index.vue';
+</script>
