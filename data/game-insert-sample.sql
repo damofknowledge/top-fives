@@ -5,8 +5,6 @@ update artists set "artistId" = '2PSiyldxmJze7xiqbz658m', name = 'Rotation Physi
 
 ALTER SEQUENCE artists_id_seq RESTART WITH 719;
 
-2PSiyldxmJze7xiqbz658m | Spin Doctors | 284
-
 19zqV9DV3txjMUjHvltl2D | Motion City Soundtrack         | 1196
 1DoYbXxolkSNTovBmuG0C2 | The Soundtrack Of Our Lives    | 1197
 4d3yvTptO48nOYTPBcPFZC | Eve                            | 1198
