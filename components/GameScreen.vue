@@ -125,7 +125,6 @@ const state = reactive({
   loading: true,
   artistInfo: {
     image: '',
-    popularity: 0,
   },
   topTracks: [] as Array<Track>,
   topAlbums: [] as Array<any>,
@@ -159,7 +158,6 @@ const getArtistInfo = async () => {
     });
     state.artistInfo = {
       image: response.images[0].url,
-      popularity: response.popularity,
     };
   } catch (err) {
     console.error(err);
@@ -195,7 +193,6 @@ const getTopTracks = async () => {
       return {
         name: t.name,
         album: t.album.name,
-        popularity: t.popularity || 0,
         preview_url: t.preview_url,
       };
     });
@@ -249,14 +246,13 @@ const getArtistTracks = async (albumIds: string) => {
       },
     });
 
-    // 1. Get track names from every album, add album popularity
+    // 1. Get track names from every album
     // 2. Flatten array
     return response.albums
       .map((album: any) => {
         const tracks = album?.tracks?.items?.map((i: Track) => {
           return {
             name: i.name,
-            popularity: album?.popularity || 0,
             preview_url: i.preview_url,
           };
         });
@@ -279,12 +275,10 @@ const setAutocompleteList = (autocompleteList: Array<any> = []) => {
   // 4. Reduce list to unique track names
   // We don't care what album the title comes from, correct matches of song across different albums will count
   // 5. Sort alphabetically by track name, descending
-  // 6. Sort by track's album popularity, descending
   state.autocompletes = [
     ...new Map(autocomplete.map((item: Track) => [item['name'], item])).values(),
   ]
-    .sort()
-    .sort((a: Track, b: Track) => b.popularity - a.popularity);
+    .sort();
 };
 
 /**

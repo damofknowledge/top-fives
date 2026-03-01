@@ -15,7 +15,6 @@ export interface Track {
   album: {
     name: string;
   };
-  popularity: number;
   preview_url: string;
 }
 
