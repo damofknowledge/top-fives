@@ -142,7 +142,7 @@ onMounted(async () => {
   }
 
   const showInstructions = new Date() >= new Date('2026-03-09') || localStorage.getItem('new');
-  if (showInstructions || showInstructions === null) {
+  if (showInstructions === null || showInstructions === true) {
     openModal('help');
     localStorage.setItem('new', '0');
   }
